@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,200,300,300italic,400,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300,700);
+
+body {
+  font: 14px "Merriweather Sans","Roboto",Helvetica,Helvetica Neue,Arial;
+  margin:0px;
+  background-color:#EEE;
+}
+
+a {
+  color: blue;
+  text-decoration:  none;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top:-20px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+
+
+#titlebar-container-menu a {
+  text-decoration:  none;
+  color:black;
+}
+
+#titlebar-container-menu a:hover {
+  text-decoration:  none;
+  color:blue;
+}
+
+
+#main-content-container {
+  width: 960px;
+  margin: 0 auto;
+  border:thin solid #AAA;
+  -moz-box-shadow: 0 0 6px #7d7d7d;
+  -webkit-box-shadow: 0 0 6px #7d7d7d;
+  box-shadow: 0 0 6px #7d7d7d;
+  background: rgba(255, 255, 255, 0.85);
+  margin-top:-20px;
+  z-index:0;
+  margin-top:100px;
+  margin-bottom:20px;
+}
+
+#page-content-container {
+  padding:20px;
+}
+
+
+
+.main-entry {
+  min-height:130px;
+  margin-bottom:30px;
+  padding-bottom:0px;
+}
+
+.main-entry h2 {
+  font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.main-entry img {
+  width:128px;
+  height:128px;
+  padding:21px;
+  float:left;
+}
+
+
+.main-entry-content {
+  margin-left:170px;
+  margin-bottom:0px;
+}
+
+.main-entry-content p {
+  margin-bottom:0px;
+  padding:0px;
+}
+
+
+#titlebar-container {
+  width:100%;
+  height:100px;
+  margin:0xp;
+  background: rgba(255, 255, 255, 0.85);
+  top:0;
+  position:fixed;
+  border-bottom: thin solid #EEE;
+
+  -moz-box-shadow: 0 0 6px #7d7d7d;
+  -webkit-box-shadow: 0 0 6px #7d7d7d;
+  box-shadow: 0 0 6px #7d7d7d;
+}
+
+#titlebar-container-logo {
+  background:url(../img/brainlogowtext.png);
+  width:246px;
+  height:100px;
+}
+
+#titlebar-container-menu {
+  position:absolute;
+  float:right;
+  right:0px;
+  height:100px;
+  line-height:100px;
+/*  background-color:#AAA;*/
+  width:700px;
+  top:0px;
+  text-align:center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+
+#main-initiative-title-bg {
+  margin: 0 auto;
+  position: absolute;
+  height:200px;
+  width: 700px;
+}
+
+#brain-logo {
+  width: 528px;
+  height: 557px;
+  background:url(../img/brainlogo-large.png);
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  top:0;
+  margin-left: 275px;
+  margin-top: 50px;
+  z-index:-1;
+}
+
+#main-initiative-title {
+  height:200px;
+  width: 700px;
+  margin:0 auto;
+
+}
+
+#footer {
+ height:20px;
+
+}
+
+#miccai-logo {
+  float: right;
+  /*width: 110px;
+  height: 77px;
+  margin: 50px 10px 10px 10px;*/
+  width: 180px;
+  height: 170px;
+  margin: 10px 10px 10px 10px;
+  /*background: url("../img/miccai.png");*/
+  background: url("../img/miccaicombo.png") no-repeat;
+}
