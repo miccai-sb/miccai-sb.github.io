@@ -39,7 +39,9 @@ li {
   padding-bottom: 10px;
 }
 
-
+p {
+  font-size: 14px;
+}
 
 #titlebar-container-menu a {
   text-decoration:  none;
@@ -180,4 +182,14 @@ li {
   margin: 10px 10px 10px 10px;
   /*background: url("../img/miccai.png");*/
   background: url("../img/miccaicombo.png") no-repeat;
+}
+
+#mec-banner {
+  max-width:100%;
+  max-height:100%;
+}
+
+#social-media-embed {
+  width: 50%;
+  height: 170px;
 }
