@@ -199,7 +199,6 @@ p {
     animation:1s blinker linear infinite;
     -webkit-animation:1s blinker linear infinite;
     -moz-animation:1s blinker linear infinite;
-    -webkit-animation-duration: 1.2s;
     color: red;
 }
 
