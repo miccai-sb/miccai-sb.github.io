@@ -132,7 +132,7 @@ p {
   height:100px;
   line-height:100px;
 /*  background-color:#AAA;*/
-  width:700px;
+  width:1000px;
   top:0px;
   text-align:center;
   vertical-align: middle;
@@ -192,6 +192,11 @@ p {
 #social-media-embed {
   width: 50%;
   height: 170px;
+}
+
+#float-image  {
+  float: left;    
+  margin: 0 15px 0 0;
 }
 
 .blink_text
