@@ -263,6 +263,7 @@
         slotMaxTime: "21:00:00",
         slotDuration: "00:30:00",
         allDaySlot: false, // <-- hides the "all-day" row
+        timeZone: 'Asia/Seoul', // <-- ensures display in Korean time
         events: [
           {
             title: 'MSB EMERGE Workshop',
@@ -312,27 +313,36 @@
         ],
 
         eventClick: function (info) {
-          // Prevent default link
           info.jsEvent.preventDefault();
 
-          // Format date/time
           function formatDate(date) {
-            return date.toISOString().replace(/[-:]/g, '').split('.')[0];
+            // Format as YYYYMMDDTHHmmss (local in Korean time)
+            let tzOffset = 9 * 60; // Korea is UTC+9
+            let localDate = new Date(date.getTime() + tzOffset * 60000);
+            let yyyy = localDate.getUTCFullYear();
+            let mm = String(localDate.getUTCMonth() + 1).padStart(2, '0');
+            let dd = String(localDate.getUTCDate()).padStart(2, '0');
+            let hh = String(localDate.getUTCHours()).padStart(2, '0');
+            let min = String(localDate.getUTCMinutes()).padStart(2, '0');
+            let ss = String(localDate.getUTCSeconds()).padStart(2, '0');
+            return `${yyyy}${mm}${dd}T${hh}${min}${ss}`;
           }
 
           let start = formatDate(info.event.start);
           let end = formatDate(info.event.end);
 
-          // Build ICS content
-          let icsContent =
-            "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\n" +
-            "SUMMARY:" + info.event.title + "\n" +
-            "DTSTART:" + start + "\n" +
-            "DTEND:" + end + "\n" +
-            "DESCRIPTION:" + (info.event.extendedProps.description || "MICCAI 2025 Event") + "\n" +
-            "LOCATION:Daejeon, South Korea\nEND:VEVENT\nEND:VCALENDAR";
+          let icsContent = `
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:${info.event.title}
+DTSTART;TZID=Asia/Seoul:${start}
+DTEND;TZID=Asia/Seoul:${end}
+DESCRIPTION:${info.event.extendedProps.description || "MICCAI 2025 Event"}
+LOCATION:Daejeon, South Korea
+END:VEVENT
+END:VCALENDAR`;
 
-          // Create download
           let blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
           let url = URL.createObjectURL(blob);
           let a = document.createElement('a');
