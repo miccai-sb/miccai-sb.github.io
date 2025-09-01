@@ -1,30 +1,39 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>MSB at MICCAI 2025</title>
-<link href="style/style.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" type="image/png" href="favicon.png">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css" >
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <meta charset="utf-8">
+  <title>MSB at MICCAI 2025</title>
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet"
+    type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <!-- FullCalendar -->
+  <link href="https://unpkg.com/fullcalendar@6.1.9/index.global.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/fullcalendar@6.1.9/index.global.min.js"></script>
 </head>
 
 
 <div id="titlebar-container">
 
-<div id="titlebar-container-logo">
-</div>
+  <div id="titlebar-container-logo">
+  </div>
 
-<div id="titlebar-container-menu">
-  <a href="index.html">home</a> &nbsp; &middot;&nbsp;
-  <a href="apply.html">join msb</a> &nbsp; &middot;&nbsp;
-  <a href="materials.html">mec library</a> &nbsp; &middot;&nbsp;
-  <a href="events.html"><font color="#B43757">miccai 2025 events</font></a> &nbsp; &middot;&nbsp;
-  <a href="challenge.html">educational challenge</a> &nbsp; &middot; &nbsp;
-  <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">emerge</a> &nbsp; &middot; &nbsp;
+  <div id="titlebar-container-menu">
+    <a href="index.html">home</a> &nbsp; &middot;&nbsp;
+    <a href="apply.html">join msb</a> &nbsp; &middot;&nbsp;
+    <a href="materials.html">mec library</a> &nbsp; &middot;&nbsp;
+    <a href="events.html">
+      <font color="#B43757">miccai 2025 events</font>
+    </a> &nbsp; &middot;&nbsp;
+    <a href="challenge.html">educational challenge</a> &nbsp; &middot; &nbsp;
+    <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">emerge</a> &nbsp; &middot; &nbsp;
     <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">doctoral consortium</a> &nbsp; &middot; &nbsp;
-  <a href="organization.html">organization</a>
-</div>
+    <a href="organization.html">organization</a>
+  </div>
 
 </div>
 
@@ -39,108 +48,306 @@
 
 
 <div id="main-content-container">
-<div id="page-content-container">
-<div id="page-content">
+  <div id="page-content-container">
+    <div id="page-content">
 
-  <h1>Participate in MSB Events at MICCAI 2025</h1>
-    <br/>
-    <img src="./img/2025msb/events_banner.png" alt="MSB Events at MICCAI 2025" id="msb-events-banner"/>
-    <br/><br/>
+      <h1>Participate in MSB Events at MICCAI 2025</h1>
+      <br />
+      <img src="./img/2025msb/events_banner.png" alt="MSB Events at MICCAI 2025" id="msb-events-banner" />
+      <br /><br />
 
-    <div style="text-align: center; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(247, 234, 213, 0.1);">
-      <h2> 
-        <img id="blinkingImage1" src="img/2024msb/highlighticon.jpeg" alt="Marrakech Tour" style="width: 80px; height: 20px;">
-        Explore Daejeon!</h2>
-      <div style="display: flex; justify-content: center; margin: 2px 0;">
-        <i class="fas fa-map-marker-alt" style="color: #9B2929; margin-right: 2px;"></i>  
-        <span style="font-weight: bold; color: #9B2929;">Soccer Game - Sept 26th, Evening Tour - Sept 27th, and Full Day Tour - Sept 28th</span>
+      <div
+        style="text-align: center; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(247, 234, 213, 0.1);">
+        <h2>
+          <img id="blinkingImage1" src="img/2024msb/highlighticon.jpeg" alt="Marrakech Tour"
+            style="width: 80px; height: 20px;">
+          Explore Daejeon!
+        </h2>
+        <div style="display: flex; justify-content: center; margin: 2px 0;">
+          <i class="fas fa-map-marker-alt" style="color: #9B2929; margin-right: 2px;"></i>
+          <span style="font-weight: bold; color: #9B2929;">Soccer Game - Sept 26th, Evening Tour - Sept 27th, and Full
+            Day Tour - Sept 28th</span>
+        </div>
+        <p style="font-size: 14px; margin-top: 10px; color: purple;" id="blinkingText">Registration Required - Limited
+          Seats Available</p>
+        <p style="font-size: 14px; margin-top: 5px; color: #999;">Scroll down for more details!</p>
       </div>
-      <p style="font-size: 14px; margin-top: 10px; color: purple;" id="blinkingText">Registration Required - Limited Seats Available</p>
-      <p style="font-size: 14px; margin-top: 5px; color: #999;">Scroll down for more details!</p>
+
+      <script>
+        var element1 = document.getElementById("blinkingText").style.visibility = 'hidden';
+        setInterval(function () {
+          var element1 = document.getElementById("blinkingText");
+          element1.style.visibility = (element1.style.visibility === 'hidden' ? 'visible' : 'hidden');
+        }, 500); // Adjust blinking speed by changing the interval (in milliseconds)
+        var blinkingImage = document.getElementById("blinkingImage1");
+        if (blinkingImage) {
+          blinkingImage.style.visibility = 'hidden';
+          setInterval(function () {
+            blinkingImage.style.visibility = (blinkingImage.style.visibility === 'hidden' ? 'visible' : 'hidden');
+          }, 500);
+        }
+
+      </script>
+
+      <h2 style="margin-top:40px; text-align:center;">📅 MSB Events Calendar</h2>
+      Click on the event to download an ICS file. Click <a href="calendar/msb-miccai2025.ics" download>here</a> to
+      download all events at once.
+      <div id="calendar"
+        style="max-width: 900px; margin: 40px auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      </div>
+
+
+      <hr><br><br>
+
+      <h3 style="margin:0">September 23rd, 2025 (Tuesday)</h3>
+      <h2 style="margin:0">
+        <font color="#8A6240">Second MSB EMERGE Workshop</font>
+      </h2><br>
+      <img src="./img/2024msb/emerge.png" alt="" width="200" height="200" id="float-image" />
+      <p>The MSB EMERGE workshop is a half-day workshop <font color="#29AB87">fully organized by students and designed
+          for students</font> to present their research and support them in their journey to become independent
+        investigators and mentors. We encourage early-career researchers - maximum two years post Ph.D. - to be primary
+        investigators and occupy the first and/or last author positions. Another unique feature of our workshop is the
+        dedicated panel of experts who will engage in discussion with the presenters to provide constructive feedback on
+        extending their work to a journal submission. We publish the accepted papers in <font color="#29AB87">Springer
+          LNCS workshop proceedings</font> and provide an <font color="#29AB87">invitation to submit as full extended
+          papers in MELBA journal</font>. This initiative also aligns with one of our primary objectives to enhance
+        diversity within our community further. For more details, visit: <a
+          href="https://miccaimsb.github.io/emerge/">https://miccaimsb.github.io/emerge/.</a></p><br /><br />
+      <br>
+
+      <h3 style="margin:0">September 24th/25th/26th, 2025 (Wednesday, Thursday and Friday) </h3>
+      <h2 style="margin:0">
+        <font color="#8A6240">Doctoral Consortium (Poster Presentation)</font>
+      </h2><br>
+      <img src="https://miccaimsb.github.io/msb-doctoral25/images/miccai-logo.png" alt="" width="200" height="200"
+        id="float-image" />
+      <p>Posters from Doctoral Consortium participants—highlighting the core ideas of their doctoral research—will be on
+        display throughout the main conference.
+        These posters offer a unique opportunity for attendees to engage in thoughtful discussions with emerging
+        researchers.
+        The submissions will be featured in the <font color="#0041C2">MICCAI Emerging Scholars Collection</font>, which
+        will be hosted on the MSB website and the MICCAI Society platform.
+      </p>
+      <br /><br /><br /><br /><br>
+      <br>
+
+      <h3 style="margin:0">September 24th/25th, 2025 (Wednesday and Thursday) </h3>
+      <h2 style="margin:0">
+        <font color="#8A6240">Morning Runs</font>
+      </h2><br>
+      <img src="./img/2025msb/running.png" alt="" width="200" height="200" id="float-image" />
+      <p>Kickstart your day with a breathtaking sunrise run along Daejeon's scenic riverside. It's a wonderful
+        opportunity to connect with fellow MICCAI attendees, invigorate your spirit, and set the pace for the day. Lace
+        up your running shoes, bring your smiles, register, and join us in welcoming the new day! All fitness levels are
+        welcome. <font color="#29AB87">This year we will offer free t-shirts for the first 50 participants on Wednesday
+          morning.</font>
+      </p><br /><br /><br /><br /><br><br /><br>
+      <br>
+
+      <h3 style="margin:0">September 24th, 2025 (Wednesday @ Evening) </h3>
+      <h2 style="margin:0">
+        <font color="#8A6240">Academia and Industry Panel and Networking Event</font>
+      </h2><br>
+      <img src="./img/2023msb/anadi.jpeg" alt="" width="200" height="200" id="float-image" />
+      <p>The MSB has a goal to provide opportunities for professional development and networking. The A&I event educates
+        current students on career possibilities post graduation, and provides students a venue to ask questions related
+        to professional development. <font color="#0041C2">The A&I event will begin at 6 PM on the first day of the main
+          conference</font> with a one-hour moderated panel discussion on career development and the differences between
+        academic and corporate research. Panelists are selected to represent a diverse set of backgrounds, perspectives
+        and experiences. The second hour of the A&I event will feature a <font color="#0041C2">networking session
+          structured in a speed-dating style</font>.</p><br /><br /><br /><br />
+      <br>
+
+      <h3 style="margin:0">September 25th, 2025 (Thursday @ Lunch) </h3>
+      <h2 style="margin:0">
+        <font color="#8A6240">MSB Lunch, MICCAI Educational Challenge and PhD Thesis Madness</font>
+      </h2><br>
+      <img src="./img/2024msb/thesismadness.png" alt="" width="200" height="200" id="float-image" />
+      Videos of the top-6 submissions to the <b><a target="_blank" rel="noopener noreferrer"
+          href="./challenge.html">MICCAI Educational Challenge</a></b> will be shown during the MSB Lunch event.
+      The MICCAI Educational Challenge is a competition that aims to promote the development of educational resources in
+      the field of medical imaging and computer-assisted interventions.
+      <br>
+      The best <b><a target="_blank" rel="noopener noreferrer" href="./doctoralconsortium.html">doctoral
+          consortium</a></b> submissions will be invited to present their work in a 3-minute oral presentation during
+      the MSB Lunch event.
+      The Thesis Madness event allows final-year Ph.D. students and freshly finished doctorates to showcase their
+      groundbreaking work in a short framework.
+      The event will take place during the lunch and will offer the opportunity for upcoming researchers to connect,
+      collaborate, and construct new ideas.
+      <br>
+      <font color="#0041C2">Lunch will be served at the venue.</font><br><br>
+      <br><br>
+
+      <h3 style="margin:0">September 26th, 2025 (Friday @ Evening) </h3>
+      <h2 style="margin:0">
+        <font color="#8A6240">MICCAI Soccer Game</font>
+      </h2><br>
+      <img src="./img/2023msb/soccer.jpeg" alt="" width="200" height="200" id="float-image" />
+      <p>The traditional MICCAI soccer game will return this year! It will take place on two courts for 5-vs-5. The game
+        will be hosted at 6:30 P.M. on September 26th evening.
+        <font color="#0041C2">Participants will be guided from the conference center to the nearby court.</font>
+      </p><span class="blink_text" style="color:purple;">LIMITED SEATS, REGISTRATION REQUIRED.</span>
+      <font color="#000080"> Now OPEN on the main conference registration portal.</font>
+      <br /><br /><br /><br /><br /><br /><br /><br />
+
+      <h3 style="margin:0">September 27th, 2025 (Saturday @ Evening) </h3>
+      <h2 style="margin:0">
+        <font color="#8A6240">Evening Tour: Taste & Traditions - An Evening of Korean Flavors</font>
+      </h2><br>
+      <img src="./img/2025msb/foodtour.jpg" alt="" width="200" height="200" id="float-image" />
+      <p>Start with food tastings at a traditional <font color="#29AB87">Korean market</font>, including popular street
+        snacks. Try your hand at nostalgic <font color="#29AB87">Korean games</font> like Dalgona and Ddakji (some made
+        popular by Squid Game). Then enjoy a relaxed dinner with local <font color="#29AB87">Korean dishes</font>,
+        followed by a stroll down <font color="#29AB87">Sky Road</font>, a well-known pedestrian street with lights,
+        performances, and shops. Wrap up the evening with some café-hopping in the area. Includes dinner, a small gift
+        from the famous Sung Sim Dang Bakery, transportation, and travel insurance.
+        <font color="#0041C2"> Participants will be transported to and from the event.</font>
+      </p><span class="blink_text" style="color:purple;">LIMITED SEATS, REGISTRATION REQUIRED.</span>
+      <font color="#000080"> Now OPEN on the main conference registration portal.</font><br /><br><br><br>
+      <br>
+
+      <h3 style="margin:0">September 28th, 2025 (Sunday) </h3>
+      <h2 style="margin:0">
+        <font color="#8A6240">Full-Day Guided Tour: Discover Daejeon's Science & Heritage</font>
+      </h2><br>
+      <img src="./img/2025msb/fulldaytour.png" alt="" width="200" height="200" id="float-image" />
+      <p>Explore Daejeon through a full-day guided tour covering science, history, and scenic views. Stops include the
+        <font color="#29AB87">National Science Museum, Dongchundan Historical Park, Uam Historical Park, and Daedong Sky
+          Park</font> with an English-speaking guide. Enjoy hands-on exhibits, stories of Korea’s scholarly past, and
+        sweeping city views. The tour includes a <font color="#29AB87">traditional kalguksu lunch, morning snacks, a
+          cultural gift, transportation, and travel insurance</font>.
+        <font color="#0041C2">Participants will be transported to and from the event.</font> <br><br><span
+          class="blink_text" style="color:purple;">LIMITED SEATS, REGISTRATION REQUIRED.</span>
+        <font color="#000080"> Now OPEN on the main conference registration portal.</font>
+      </p><br /><br /><br /><br />
+
+      <p>The MICCAI Society is committed to ensuring a safe and welcoming experience for all who attend MICCAI Society
+        events. Read the <a href="https://conferences.miccai.org/2025/en/CODE-OF-CONDUCT.html">Code of Conduct
+          policy</a> to learn what's expected. As a participant of a MICCAI event, you agree to abide by this Code of
+        Conduct.</p>
+
+
     </div>
-    
-    <script>
-      var element1 = document.getElementById("blinkingText").style.visibility = 'hidden';
-      setInterval(function() {
-        var element1 = document.getElementById("blinkingText");
-        element1.style.visibility = (element1.style.visibility === 'hidden' ? 'visible' : 'hidden');
-      }, 500); // Adjust blinking speed by changing the interval (in milliseconds)
-      var blinkingImage = document.getElementById("blinkingImage");
-      blinkingImage.style.visibility = 'hidden';
-      setInterval(function() {
-        var blinkingImage = document.getElementById("blinkingImage");
-        blinkingImage.style.visibility = (blinkingImage.style.visibility === 'hidden' ? 'visible' : 'hidden');
-      }, 500); // Adjust blinking speed by changing the interval (in milliseconds)
-    </script>
-    
-    
-<hr><br><br>
-
-<h3 style="margin:0">September 23rd, 2025 (Tuesday)</h3><h2 style="margin:0"> <font color="#8A6240">Second MSB EMERGE Workshop</font></h2><br>
-<img src="./img/2024msb/emerge.png" alt="" width="200" height="200" id="float-image"/>
-<p>The MSB EMERGE workshop is a half-day workshop <font color="#29AB87">fully organized by students and designed for students</font> to present their research and support them in their journey to become independent investigators and mentors. We encourage early-career researchers - maximum two years post Ph.D. - to be primary investigators and occupy the first and/or last author positions. Another unique feature of our workshop is the dedicated panel of experts who will engage in discussion with the presenters to provide constructive feedback on extending their work to a journal submission. We publish the accepted papers in <font color="#29AB87">Springer LNCS workshop proceedings</font> and provide an <font color="#29AB87">invitation to submit as full extended papers in MELBA journal</font>. This initiative also aligns with one of our primary objectives to enhance diversity within our community further. For more details, visit: <a href="https://miccaimsb.github.io/emerge/">https://miccaimsb.github.io/emerge/.</a></p><br/><br/>
-<br>
-
-<h3 style="margin:0">September 24th/25th/26th, 2025 (Wednesday, Thursday and Friday) </h3><h2 style="margin:0"> <font color="#8A6240">Doctoral Consortium (Poster Presentation)</font></h2><br>
-<img src="https://miccaimsb.github.io/msb-doctoral25/images/miccai-logo.png" alt="" width="200" height="200" id="float-image"/>
-<p>Posters from Doctoral Consortium participants—highlighting the core ideas of their doctoral research—will be on display throughout the main conference.
-  These posters offer a unique opportunity for attendees to engage in thoughtful discussions with emerging researchers.
-  The submissions will be featured in the <font color="#0041C2">MICCAI Emerging Scholars Collection</font>, which will be hosted on the MSB website and the MICCAI Society platform.
-</p>
-<br/><br/><br/><br/><br>
-<br>
-
-<h3 style="margin:0">September 24th/25th, 2025 (Wednesday and Thursday) </h3><h2 style="margin:0"> <font color="#8A6240">Morning Runs</font></h2><br>
-<img src="./img/2025msb/running.png" alt="" width="200" height="200" id="float-image"/>
-<p>Kickstart your day with a breathtaking sunrise run along Daejeon's scenic riverside. It's a wonderful opportunity to connect with fellow MICCAI attendees, invigorate your spirit, and set the pace for the day. Lace up your running shoes, bring your smiles, register, and join us in welcoming the new day! All fitness levels are welcome. <font color="#29AB87">This year we will offer free t-shirts for the first 50 participants on Wednesday morning.</font></p><br/><br/><br/><br/><br><br/><br>
-<br>
-
-<h3 style="margin:0">September 24th, 2025 (Wednesday @ Evening) </h3><h2 style="margin:0"> <font color="#8A6240">Academia and Industry Panel and Networking Event</font></h2><br>
-<img src="./img/2023msb/anadi.jpeg" alt="" width="200" height="200" id="float-image"/>
-<p>The MSB has a goal to provide opportunities for professional development and networking. The A&I event educates current students on career possibilities post graduation, and provides students a venue to ask questions related to professional development. <font color="#0041C2">The A&I event will begin at 6 PM on the first day of the main conference</font> with a one-hour moderated panel discussion on career development and the differences between academic and corporate research. Panelists are selected to represent a diverse set of backgrounds, perspectives and experiences. The second hour of the A&I event will feature a <font color="#0041C2">networking session structured in a speed-dating style</font>.</p><br/><br/><br/><br/>
-<br>
-
-<h3 style="margin:0">September 25th, 2025 (Thursday @ Lunch)  </h3><h2 style="margin:0"> <font color="#8A6240">MSB Lunch, MICCAI Educational Challenge and PhD Thesis Madness</font></h2><br>
-<img src="./img/2024msb/thesismadness.png" alt="" width="200" height="200" id="float-image"/>
-Videos of the top-6 submissions to the <b><a target="_blank" rel="noopener noreferrer" href="./challenge.html">MICCAI Educational Challenge</a></b> will be shown during the MSB Lunch event.
-The MICCAI Educational Challenge is a competition that aims to promote the development of educational resources in the field of medical imaging and computer-assisted interventions.
-<br>
-The best <b><a target="_blank" rel="noopener noreferrer" href="./doctoralconsortium.html">doctoral consortium</a></b> submissions will be invited to present their work in a 3-minute oral presentation during the MSB Lunch event. 
-The Thesis Madness event allows final-year Ph.D. students and freshly finished doctorates to showcase their groundbreaking work in a short framework.
-The event will take place during the lunch and will offer the opportunity for upcoming researchers to connect, collaborate, and construct new ideas.
-<br>
-<font color="#0041C2">Lunch will be served at the venue.</font><br><br>
-<br><br>
-
-<h3 style="margin:0">September 26th, 2025 (Friday @ Evening)  </h3><h2 style="margin:0"> <font color="#8A6240">MICCAI Soccer Game</font></h2><br>
-<img src="./img/2023msb/soccer.jpeg" alt="" width="200" height="200" id="float-image"/>
-<p>The traditional MICCAI soccer game will return this year! It will take place on two courts for 5-vs-5. The game will be hosted at 6:30 P.M. on September 26th evening.
-  <font color="#0041C2">Participants will be guided from the conference center to the nearby court.</font> </p><span class="blink_text" style="color:purple;">LIMITED SEATS, REGISTRATION REQUIRED.</span><font color="#000080"> Now OPEN on the main conference registration portal.</font><br/><br/><br/><br/><br/><br/><br/><br/>
-
-<h3 style="margin:0">September 27th, 2025 (Saturday @ Evening)  </h3><h2 style="margin:0"> <font color="#8A6240">Evening Tour: Taste & Traditions - An Evening of Korean Flavors</font></h2><br>
-<img src="./img/2025msb/foodtour.jpg" alt="" width="200" height="200" id="float-image"/>
-<p>Start with food tastings at a traditional <font color="#29AB87">Korean market</font>, including popular street snacks. Try your hand at nostalgic <font color="#29AB87">Korean games</font> like Dalgona and Ddakji (some made popular by Squid Game). Then enjoy a relaxed dinner with local <font color="#29AB87">Korean dishes</font>, followed by a stroll down <font color="#29AB87">Sky Road</font>, a well-known pedestrian street with lights, performances, and shops. Wrap up the evening with some café-hopping in the area. Includes dinner, a small gift from the famous Sung Sim Dang Bakery, transportation, and travel insurance.
-<font color="#0041C2"> Participants will be transported to and from the event.</font></p><span class="blink_text" style="color:purple;">LIMITED SEATS, REGISTRATION REQUIRED.</span><font color="#000080"> Now OPEN on the main conference registration portal.</font><br/><br><br><br>
-<br>
-
-<h3 style="margin:0">September 28th, 2025 (Sunday)  </h3><h2 style="margin:0"> <font color="#8A6240">Full-Day Guided Tour: Discover Daejeon's Science & Heritage</font></h2><br>
-<img src="./img/2025msb/fulldaytour.png" alt="" width="200" height="200" id="float-image"/>
-<p>Explore Daejeon through a full-day guided tour covering science, history, and scenic views. Stops include the <font color="#29AB87">National Science Museum, Dongchundan Historical Park, Uam Historical Park, and Daedong Sky Park</font> with an English-speaking guide. Enjoy hands-on exhibits, stories of Korea’s scholarly past, and sweeping city views. The tour includes a <font color="#29AB87">traditional kalguksu lunch, morning snacks, a cultural gift, transportation, and travel insurance</font>.
-<font color="#0041C2">Participants will be transported to and from the event.</font> <br><br><span class="blink_text" style="color:purple;">LIMITED SEATS, REGISTRATION REQUIRED.</span><font color="#000080"> Now OPEN on the main conference registration portal.</font>
-</p><br/><br/><br/><br/>
-
-<p>The MICCAI Society is committed to ensuring a safe and welcoming experience for all who attend MICCAI Society events. Read the <a href="https://conferences.miccai.org/2025/en/CODE-OF-CONDUCT.html">Code of Conduct policy</a> to learn what's expected. As a participant of a MICCAI event, you agree to abide by this Code of Conduct.</p>
-
-
-</div>
-</div>
-</div>
-
-  <div id="footer">
   </div>
+</div>
+
+<div id="footer">
+</div>
 
 </div>
+
+
+
 
 <body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'timeGridWeek',
+        headerToolbar: {
+          left: '',                 // remove prev/next/today buttons
+          center: 'title',
+          right: ''                 // no view switchers
+        },
+
+        firstDay: 1,
+        initialDate: '2025-09-23',
+        validRange: {
+          start: '2025-09-22',
+          end: '2025-09-29'         // exclusive → stops at Sept 28
+        },
+        slotMinTime: "06:30:00",
+        slotMaxTime: "21:00:00",
+        slotDuration: "00:30:00",
+        allDaySlot: false, // <-- hides the "all-day" row
+        events: [
+          {
+            title: 'MSB EMERGE Workshop',
+            start: '2025-09-23T08:00:00',
+            end: '2025-09-23T12:30:00'
+          },
+          {
+            title: 'Morning Run',
+            start: '2025-09-24T06:30:00',
+            end: '2025-09-24T07:30:00'
+          },
+          {
+            title: 'Doctoral Consortium',
+            start: '2025-09-24T15:30:00',
+            end: '2025-09-24T17:00:00'
+          },
+          {
+            title: 'Academia & Industry Panel',
+            start: '2025-09-24T17:00:00',
+            end: '2025-09-24T18:30:00'
+          },
+          {
+            title: 'Morning Run',
+            start: '2025-09-25T07:00:00',
+            end: '2025-09-25T08:00:00'
+          },
+          {
+            title: 'MSB Lunch + Challenge + Thesis Madness',
+            start: '2025-09-25T12:30:00',
+            end: '2025-09-25T13:30:00'
+          },
+          {
+            title: 'MICCAI Soccer Game',
+            start: '2025-09-26T18:30:00',
+            end: '2025-09-26T21:00:00'
+          },
+          {
+            title: 'Evening Tour: Taste & Traditions',
+            start: '2025-09-27T18:30:00',
+            end: '2025-09-27T21:00:00'
+          },
+          {
+            title: 'Full-Day Guided Tour',
+            start: '2025-09-28T09:00:00',
+            end: '2025-09-28T18:30:00'
+          }
+        ],
+
+        eventClick: function (info) {
+          // Prevent default link
+          info.jsEvent.preventDefault();
+
+          // Format date/time
+          function formatDate(date) {
+            return date.toISOString().replace(/[-:]/g, '').split('.')[0];
+          }
+
+          let start = formatDate(info.event.start);
+          let end = formatDate(info.event.end);
+
+          // Build ICS content
+          let icsContent =
+            "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\n" +
+            "SUMMARY:" + info.event.title + "\n" +
+            "DTSTART:" + start + "\n" +
+            "DTEND:" + end + "\n" +
+            "DESCRIPTION:" + (info.event.extendedProps.description || "MICCAI 2025 Event") + "\n" +
+            "LOCATION:Daejeon, South Korea\nEND:VEVENT\nEND:VCALENDAR";
+
+          // Create download
+          let blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+          let url = URL.createObjectURL(blob);
+          let a = document.createElement('a');
+          a.href = url;
+          a.download = info.event.title.replace(/\s+/g, '_') + ".ics";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        }
+      });
+
+      calendar.render();
+    });
+  </script>
 </body>
+
 </html>
