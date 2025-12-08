@@ -2,110 +2,278 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>MICCAI Educational Initiative</title>
-<link href="style/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MICCAI Student Board - Empowering the next generation of medical imaging researchers through education, mentorship, and community.">
+<title>MICCAI Student Board</title>
 <link rel="shortcut icon" type="image/png" href="favicon.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css" >
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<link href="style/cards.css" rel="stylesheet" type="text/css">
+<link href="style/layout.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="js/theme-toggle.js"></script>
+<script src="js/nav-dropdown.js"></script>
 </head>
 
+<body>
 
 <div id="titlebar-container">
-
-<div id="titlebar-container-logo">
-</div>
-
-<div id="titlebar-container-menu">
-  <a href="index.html">home</a> &nbsp; &middot;&nbsp;
-  <a href="apply.html">join msb</a> &nbsp; &middot;&nbsp;
-  <a href="materials.html">mec library</a> &nbsp; &middot;&nbsp;
-  <a href="events.html"><font color="#B43757">miccai 2025 events</font></a> &nbsp; &middot;&nbsp;
-  <a href="challenge.html">educational challenge</a> &nbsp; &middot; &nbsp;
-  <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">emerge</a> &nbsp; &middot; &nbsp;
-    <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">doctoral consortium</a> &nbsp; &middot; &nbsp;
-  <a href="organization.html">organization</a>
-</div>
-
+  <div id="titlebar-container-logo">
+    <div class="logo-title">MICCAI Student Board</div>
+  </div>
+  <nav id="titlebar-container-menu">
+    <a href="index.html" class="active">Home</a>
+    <span class="nav-disabled">About MSB</span>
+    <a href="apply.html">Join MSB</a>
+    <a href="materials.html">MEC Library</a>
+    <a href="schedule2025.html">2025 Schedule</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle">Events</button>
+      <div class="nav-dropdown-menu">
+        <a href="challenge.html">Educational Challenge</a>
+        <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a>
+        <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a>
+      </div>
+    </div>
+    <a href="organization.html">Our Team</a>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-icon"><i class="fa fa-moon-o"></i></span>
+  </button>
 </div>
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0&appId=247462326275069&autoLogAppEvents=1" nonce="dVxqWaRg"></script>
 
 
-<div id="brain-logo">
-</div>
-
-
-
-
-
 <div id="main-content-container">
 <div id="page-content-container">
 <div id="page-content">
 
-<img src="./img/2026msb/msb2026banner.png" alt="MICCAI 2026 Abu Dhabi" id="mec-banner"/>
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-image">
+      <img src="./img/2026msb/msb2026banner.png" alt="MICCAI Student Board 2026" />
+    </div>
+    <div class="hero-text">
+      <h1>MICCAI Student Board</h1>
+      <p>The MICCAI Student Board (MSB) is dedicated to supporting students and early-career researchers in medical image computing and computer-assisted interventions.</p>
+      <p>We create opportunities for learning, collaboration, and professional development within the MICCAI community.</p>
 
-<!-- <h1>MICCAI Educational Challenge</h1> -->
+      <div style="display: flex; gap: var(--space-lg); align-items: center; flex-wrap: wrap;">
+        <a href="#about" class="hero-cta">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- The MICCAI 2021 Challenge is on! Please check out the call below. -->
-<!-- <a name="mec2021" class="alink" href="./challenge.html"><h1>MICCAI Educational Challenge 2022</h1></a>  -->
-<!-- <span class="blink_text" style="color:red">New Extension: The deadline for the MEC 2021 has been extended to the 16th of August!</span> -->
-<!-- <span class="blink_text" style="color:red;">Update: The deadline for the MEC 2022 has been extended to the 15th of August!</span> -->
+<div class="page-layout">
+  <div class="page-layout__main">
+    <section id="about" style="margin-bottom: var(--space-xxxl);">
+      <h2 style="margin-bottom: var(--space-md);">About the MICCAI Student Board</h2>
+      <p style="line-height: 1.8; margin-bottom: var(--space-lg);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p style="line-height: 1.8; margin-bottom: var(--space-lg);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p style="line-height: 1.8; margin-bottom: var(--space-lg);">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </section>
 
-<h1>MICCAI Education Challenge - Overview</h1>
+    <section style="margin-bottom: var(--space-xl);">
+      <h1 style="margin-bottom: var(--space-md);">Our Flagship Events</h1>
 
-<p>There are many fundamental concepts unique to medical image computing and computer-assisted interventions. However, finding good sources can be difficult, whether you are a new student or an established researcher exploring a new topic.</p>
+      <hr class="section-divider" style="margin: var(--space-md) 0 var(--space-xl);">
 
-<p>With the MICCAI Educational Challenge, we hope to build a library of tutorials relevant to the MICCAI community and created by its members. Establishing a comprehensive collection will make the field more accessible and shorten the startup time for new students. The MEC will be repeated at future MICCAI conferences, building a large corpus of educational resources for the community.</p>
+      <div style="display: flex; flex-direction: column; gap: 0;">
+        <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank" style="display: flex; align-items: center; padding: var(--space-lg) 0; border-bottom: 1px solid var(--color-border); text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.backgroundColor='var(--color-bg-elevated)'; this.style.paddingLeft='var(--space-md)';" onmouseout="this.style.backgroundColor='transparent'; this.style.paddingLeft='0';">
+          <div style="flex: 1;">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0 0 var(--space-xs); color: var(--color-primary);">MICCAI Doctoral Consortium</h3>
+            <p style="font-size: var(--font-size-sm); line-height: 1.5; color: var(--color-text-secondary); margin: 0;">Annual event connecting doctoral students with established researchers for mentorship and networking.</p>
+          </div>
+          <i class="fa fa-external-link" style="margin-left: var(--space-lg); color: var(--color-text-muted); font-size: var(--font-size-sm);"></i>
+        </a>
 
-<br>
+        <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank" style="display: flex; align-items: center; padding: var(--space-lg) 0; border-bottom: 1px solid var(--color-border); text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.backgroundColor='var(--color-bg-elevated)'; this.style.paddingLeft='var(--space-md)';" onmouseout="this.style.backgroundColor='transparent'; this.style.paddingLeft='0';">
+          <div style="flex: 1;">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0 0 var(--space-xs); color: var(--color-primary);">MSB EMERGE Initiative</h3>
+            <p style="font-size: var(--font-size-sm); line-height: 1.5; color: var(--color-text-secondary); margin: 0;">Empowering early-career researchers through mentorship, education, and growth opportunities.</p>
+          </div>
+          <i class="fa fa-external-link" style="margin-left: var(--space-lg); color: var(--color-text-muted); font-size: var(--font-size-sm);"></i>
+        </a>
 
+        <a href="challenge.html" style="display: flex; align-items: center; padding: var(--space-lg) 0; border-bottom: 1px solid var(--color-border); text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.backgroundColor='var(--color-bg-elevated)'; this.style.paddingLeft='var(--space-md)';" onmouseout="this.style.backgroundColor='transparent'; this.style.paddingLeft='0';">
+          <div style="flex: 1;">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0 0 var(--space-xs); color: var(--color-primary);">MICCAI Educational Challenge</h3>
+            <p style="font-size: var(--font-size-sm); line-height: 1.5; color: var(--color-text-secondary); margin: 0;">Creating and sharing high-quality educational tutorials for the medical imaging community.</p>
+          </div>
+          <i class="fa fa-arrow-right" style="margin-left: var(--space-lg); color: var(--color-text-muted); font-size: var(--font-size-sm);"></i>
+        </a>
 
-<h1>Please check out:</h1>
+        <a href="#conclave" style="display: flex; align-items: center; padding: var(--space-lg) 0; text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.backgroundColor='var(--color-bg-elevated)'; this.style.paddingLeft='var(--space-md)';" onmouseout="this.style.backgroundColor='transparent'; this.style.paddingLeft='0';">
+          <div style="flex: 1;">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0 0 var(--space-xs); color: var(--color-primary);">MICCAI Academia and Industry Conclave</h3>
+            <p style="font-size: var(--font-size-sm); line-height: 1.5; color: var(--color-text-secondary); margin: 0;">Bridging the gap between academic research and industry applications in medical imaging.</p>
+          </div>
+          <i class="fa fa-arrow-right" style="margin-left: var(--space-lg); color: var(--color-text-muted); font-size: var(--font-size-sm);"></i>
+        </a>
+      </div>
 
-<br>
-<a href="materials.html" style="width:25%; display: table-cell;"><h3>Library of Previous Submissions</h3></a>
-<a href="organization.html" style="width:25%; display: table-cell;"><h3>The MICCAI Student Board Members</h3></a>
+      <div class="card" style="padding: var(--space-xxl); margin-top: var(--space-xxxl);">
+        <h2 style="font-size: var(--font-size-xl); margin-bottom: var(--space-lg); color: var(--color-text);">Get in Touch</h2>
 
-<a href="materials.html"><img src="./img/2023mec/mecsubmissions.png" alt="MEC 2020 Submissions" id="mec-banner" width="49%" height="250" /></a>
-<a href="organization.html"><img src="./img/2023mec/msb2023.png" alt="MEC 2021 Submissions" id="mec-banner" width="49%" height="250" /></a>
+        <p style="margin-bottom: var(--space-lg); line-height: 1.8; color: var(--color-text);">Have questions or want to collaborate? We'd love to hear from you!</p>
 
-<br><br>
+        <div style="margin-bottom: var(--space-xxl);">
+          <a href="mailto:miccai-student-board@csail.mit.edu" style="display: inline-block; padding: var(--space-sm) var(--space-lg); background: var(--color-primary); color: white; border-radius: var(--radius-sm); text-decoration: none; font-weight: 500; font-size: var(--font-size-sm);">Email us at&nbsp;&nbsp;<strong>miccai-student-board@csail.mit.edu</strong></a>
+        </div>
 
-<h1>Questions?</h1>
-<p>Please direct any questions to <a style="color: red" href="mailto:miccai-student-board@csail.mit.edu.">miccai-student-board@csail.mit.edu</a>.</p>
+        <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-md); color: var(--color-text);">Follow Us on Social Media</h3>
 
+        <div style="display: flex; gap: var(--space-lg); flex-wrap: wrap;">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/miccaistudentboard/" style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-md) var(--space-lg); background: var(--color-bg-elevated); border-radius: var(--radius-md); text-decoration: none; color: var(--color-text); transition: all var(--transition-fast);" onmouseover="this.style.background='#E1306C'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.color='var(--color-text)';"><i class="fa fa-instagram" style="font-size:24px;"></i><span style="font-weight: 500;">Instagram</span></a>
 
-<h1>Connect with us on Social Media</h1>
-<!-- <a class="twitter-timeline" name="social-media-embed" data-lang="en" width="50%" height="380" href="https://twitter.com/MiccaiStudents?ref_src=twsrc%5Etfw">Tweets by MiccaiStudents</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<div class="fb-group" name="social-media-embed" data-href="https://www.facebook.com/groups/MICCAI" width="450" data-show-social-context="true" data-show-metadata="false"><blockquote cite="https://www.facebook.com/groups/MICCAI" class="fb-xfbml-parse-ignore">MICCAI</blockquote></div> -->
-<!-- <div>
-  <a href="https://www.facebook.com/groups/MICCAI/"><h4>Facebook</h4></a>
-  <a href="https://twitter.com/miccaistudents"><h4>Twitter</h4></a>
-</div> -->
+          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@miccaieducationalinitiative" style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-md) var(--space-lg); background: var(--color-bg-elevated); border-radius: var(--radius-md); text-decoration: none; color: var(--color-text); transition: all var(--transition-fast);" onmouseover="this.style.background='#FF0000'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.color='var(--color-text)';"><i class="fa fa-youtube-play" style="font-size:24px;"></i><span style="font-weight: 500;">YouTube</span></a>
 
-<!--https://worldvectorlogo.com/downloaded/slack-new-logo-->
-<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/miccaistudentboard/"><i class="fa fa-instagram" style="font-size:48px;color:black"></i></a>
-<a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@miccaieducationalinitiative"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>
-<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/miccaistudents"><i class="fa fa-twitter" style="font-size:48px;color:#26a7de"></i></a>
-<a target="_blank" rel="noopener noreferrer" href="https://benjamindkilleen.com/msb"><svg width="38px" height="38px" enable-background="new 0 0 2447.6 2452.5" viewBox="0 0 2447.6 2452.5" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m897.4 0c-135.3.1-244.8 109.9-244.7 245.2-.1 135.3 109.5 245.1 244.8 245.2h244.8v-245.1c.1-135.3-109.5-245.1-244.9-245.3.1 0 .1 0 0 0m0 654h-652.6c-135.3.1-244.9 109.9-244.8 245.2-.2 135.3 109.4 245.1 244.7 245.3h652.7c135.3-.1 244.9-109.9 244.8-245.2.1-135.4-109.5-245.2-244.8-245.3z" fill="#36c5f0"/><path d="m2447.6 899.2c.1-135.3-109.5-245.1-244.8-245.2-135.3.1-244.9 109.9-244.8 245.2v245.3h244.8c135.3-.1 244.9-109.9 244.8-245.3zm-652.7 0v-654c.1-135.2-109.4-245-244.7-245.2-135.3.1-244.9 109.9-244.8 245.2v654c-.2 135.3 109.4 245.1 244.7 245.3 135.3-.1 244.9-109.9 244.8-245.3z" fill="#2eb67d"/><path d="m1550.1 2452.5c135.3-.1 244.9-109.9 244.8-245.2.1-135.3-109.5-245.1-244.8-245.2h-244.8v245.2c-.1 135.2 109.5 245 244.8 245.2zm0-654.1h652.7c135.3-.1 244.9-109.9 244.8-245.2.2-135.3-109.4-245.1-244.7-245.3h-652.7c-135.3.1-244.9 109.9-244.8 245.2-.1 135.4 109.4 245.2 244.7 245.3z" fill="#ecb22e"/><path d="m0 1553.2c-.1 135.3 109.5 245.1 244.8 245.2 135.3-.1 244.9-109.9 244.8-245.2v-245.2h-244.8c-135.3.1-244.9 109.9-244.8 245.2zm652.7 0v654c-.2 135.3 109.4 245.1 244.7 245.3 135.3-.1 244.9-109.9 244.8-245.2v-653.9c.2-135.3-109.4-245.1-244.7-245.3-135.4 0-244.9 109.8-244.8 245.1 0 0 0 .1 0 0" fill="#e01e5a"/></g></svg></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/miccaistudents" style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-md) var(--space-lg); background: var(--color-bg-elevated); border-radius: var(--radius-md); text-decoration: none; color: var(--color-text); transition: all var(--transition-fast);" onmouseover="this.style.background='#1DA1F2'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.color='var(--color-text)';"><i class="fa fa-twitter" style="font-size:24px;"></i><span style="font-weight: 500;">Twitter</span></a>
 
+          <a target="_blank" rel="noopener noreferrer" href="https://benjamindkilleen.com/msb" style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-md) var(--space-lg); background: var(--color-bg-elevated); border-radius: var(--radius-md); text-decoration: none; color: var(--color-text); transition: all var(--transition-fast);" onmouseover="this.style.background='#4A154B'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.color='var(--color-text)';"><i class="fa fa-slack" style="font-size:24px;"></i><span style="font-weight: 500;">Slack</span></a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-<img src="./img/2023msb/socialmedia.png" alt="MEC 2020 Submissions" id="mec-banner" width="100%" />
+  <div class="page-layout__sidebar">
+    <div class="sidebar-section">
+      <h2>Latest Updates</h2>
+      <div id="updates-container"></div>
+    </div>
 
+    <div class="sidebar-section">
+      <h2>Meet the Board</h2>
+      <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">Student leaders from around the world advancing medical imaging education.</p>
+      <a href="organization.html" class="program-card__link" style="display: inline-block; padding: var(--space-sm) var(--space-lg); background: var(--color-primary); color: white; border-radius: var(--radius-md); text-decoration: none; font-weight: 500; font-size: var(--font-size-sm);">View All Members</a>
+    </div>
+  </div>
+</div>
 
+<script>
+(function() {
+  const updates = [
+    {
+      date: '2025-12-31',
+      title: 'MSB 2026 Applications Open',
+      description: 'Apply to join the MICCAI Student Board 2026! Applications close December 31st, 2025.',
+      link: 'apply.html',
+      type: 'deadline',
+      highlight: true
+    },
+    {
+      date: '2026-10-01',
+      title: 'MICCAI 2026 in Abu Dhabi',
+      description: 'Join us at MICCAI 2026 in Abu Dhabi, UAE. Mark your calendars for exciting student events and workshops!',
+      link: 'events.html',
+      type: 'event'
+    },
+    {
+      date: '2025-09-01',
+      title: 'MICCAI 2025 Student Events',
+      description: 'Explore Daejeon with fellow students! Soccer games, evening tours, and networking opportunities await.',
+      link: 'events.html',
+      type: 'event'
+    }
+  ];
+
+  function renderUpdates() {
+    const container = document.getElementById('updates-container');
+    if (!container) return;
+
+    updates.forEach(update => {
+      const date = new Date(update.date);
+      const card = document.createElement('a');
+      card.href = update.link;
+      card.className = 'sidebar-card';
+      card.style.textDecoration = 'none';
+      card.style.display = 'block';
+
+      const headerStyle = update.highlight ? 'style="background: var(--color-success);"' : '';
+
+      card.innerHTML = `
+        <div class="sidebar-card__header" ${headerStyle}>
+          <div class="sidebar-card__date">${date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
+          <span class="sidebar-card__tag">${update.type}</span>
+        </div>
+        <div class="sidebar-card__content">
+          <h3 class="sidebar-card__title">${update.title}</h3>
+          <p class="sidebar-card__description">${update.description}</p>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderUpdates);
+  } else {
+    renderUpdates();
+  }
+})();
+</script>
+
+<script>
+// Set current year in footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 
 </div>
 </div>
 </div>
 
   <div id="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>MICCAI Student Board</h3>
+        <p>Supporting students and early-career researchers in medical image computing and computer-assisted interventions.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/miccaistudentboard/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@miccaieducationalinitiative" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+          <a href="https://twitter.com/miccaistudents" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://benjamindkilleen.com/msb" target="_blank" rel="noopener noreferrer" aria-label="Slack"><i class="fa fa-slack"></i></a>
+        </div>
+      </div>
 
+      <div class="footer-section">
+        <h3>Programs</h3>
+        <ul>
+          <li><a href="challenge.html">Educational Challenge</a></li>
+          <li><a href="materials.html">MEC Library</a></li>
+          <li><a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a></li>
+          <li><a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Get Involved</h3>
+        <ul>
+          <li><a href="apply.html">Join MSB</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="organization.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:miccai-student-board@csail.mit.edu">Email Us</a></li>
+          <li><a href="https://miccai.org" target="_blank">MICCAI Society</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> MICCAI Student Board. All rights reserved.</p>
+    </div>
   </div>
 
 </div>
 
-<body>
 </body>
 </html>

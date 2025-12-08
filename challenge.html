@@ -2,30 +2,45 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>MICCAI Educational Initiative</title>
-<link href="style/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MICCAI Educational Challenge - Create and share tutorials on medical image computing and computer-assisted interventions.">
+<title>Educational Challenge - MICCAI Student Board</title>
 <link rel="shortcut icon" type="image/png" href="favicon.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<link href="style/cards.css" rel="stylesheet" type="text/css">
+<link href="style/layout.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="js/theme-toggle.js"></script>
+<script src="js/nav-dropdown.js"></script>
 </head>
 
+<body>
 
 <div id="titlebar-container">
-
-<div id="titlebar-container-logo">
-</div>
-
-<div id="titlebar-container-menu">
-  <a href="index.html">home</a> &nbsp; &middot;&nbsp;
-  <a href="apply.html">join msb</a> &nbsp; &middot;&nbsp;
-  <a href="materials.html">mec library</a> &nbsp; &middot;&nbsp;
-  <a href="events.html"><font color="#B43757">miccai 2025 events</font></a> &nbsp; &middot;&nbsp;
-  <a href="challenge.html">educational challenge</a> &nbsp; &middot; &nbsp;
-  <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">emerge</a> &nbsp; &middot; &nbsp;
-    <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">doctoral consortium</a> &nbsp; &middot; &nbsp;
-  <a href="organization.html">organization</a>
-</div>
-
+  <div id="titlebar-container-logo">
+    <div class="logo-title">MICCAI Student Board</div>
+  </div>
+  <nav id="titlebar-container-menu">
+    <a href="index.html">Home</a>
+    <span class="nav-disabled">About MSB</span>
+    <a href="apply.html">Join MSB</a>
+    <a href="materials.html">MEC Library</a>
+    <a href="schedule2025.html">2025 Schedule</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle">Events</button>
+      <div class="nav-dropdown-menu">
+        <a href="challenge.html" class="active">Educational Challenge</a>
+        <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a>
+        <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a>
+      </div>
+    </div>
+    <a href="organization.html">Our Team</a>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-icon"><i class="fa fa-moon-o"></i></span>
+  </button>
 </div>
 
 
@@ -392,11 +407,52 @@ The top 30% of submissions will then proceed to a popular vote held at MICCAI 20
 </div>
 
   <div id="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>MICCAI Student Board</h3>
+        <p>Supporting students and early-career researchers in medical image computing and computer-assisted interventions.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/miccaistudentboard/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@miccaieducationalinitiative" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+          <a href="https://twitter.com/miccaistudents" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://benjamindkilleen.com/msb" target="_blank" rel="noopener noreferrer" aria-label="Slack"><i class="fa fa-slack"></i></a>
+        </div>
+      </div>
 
+      <div class="footer-section">
+        <h3>Programs</h3>
+        <ul>
+          <li><a href="challenge.html">Educational Challenge</a></li>
+          <li><a href="materials.html">MEC Library</a></li>
+          <li><a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a></li>
+          <li><a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Get Involved</h3>
+        <ul>
+          <li><a href="apply.html">Join MSB</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="organization.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:miccai-student-board@csail.mit.edu">Email Us</a></li>
+          <li><a href="https://miccai.org" target="_blank">MICCAI Society</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 MICCAI Student Board. All rights reserved.</p>
+    </div>
   </div>
 
 </div>
 
-<body>
 </body>
 </html>

@@ -3,39 +3,45 @@
 
 <head>
   <meta charset="utf-8">
-  <title>MICCAI Educational Initiative</title>
-  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the MICCAI Student Board members - Student leaders advancing medical imaging education worldwide.">
+  <title>Our Team - MICCAI Student Board</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet"
-    type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link href="style/cards.css" rel="stylesheet" type="text/css">
+  <link href="style/layout.css" rel="stylesheet" type="text/css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/nav-dropdown.js"></script>
 </head>
 
+<body>
 
 <div id="titlebar-container">
-
   <div id="titlebar-container-logo">
+    <div class="logo-title">MICCAI Student Board</div>
   </div>
-
-  <div id="titlebar-container-menu">
-    <a href="index.html">home</a> &nbsp; &middot;&nbsp;
-    <a href="apply.html">join msb</a> &nbsp; &middot;&nbsp;
-    <a href="materials.html">mec library</a> &nbsp; &middot;&nbsp;
-    <a href="events.html">
-      <font color="#B43757">miccai 2025 events</font>
-    </a> &nbsp; &middot;&nbsp;
-    <a href="challenge.html">educational challenge</a> &nbsp; &middot; &nbsp;
-    <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">emerge</a> &nbsp; &middot; &nbsp;
-    <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">doctoral consortium</a> &nbsp; &middot; &nbsp;
-    <a href="organization.html">organization</a>
-  </div>
-
-</div>
-
-
-<div id="brain-logo">
+  <nav id="titlebar-container-menu">
+    <a href="index.html">Home</a>
+    <span class="nav-disabled">About MSB</span>
+    <a href="apply.html">Join MSB</a>
+    <a href="materials.html">MEC Library</a>
+    <a href="schedule2025.html">2025 Schedule</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle">Events</button>
+      <div class="nav-dropdown-menu">
+        <a href="challenge.html">Educational Challenge</a>
+        <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a>
+        <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a>
+      </div>
+    </div>
+    <a href="organization.html" class="active">Our Team</a>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-icon"><i class="fa fa-moon-o"></i></span>
+  </button>
 </div>
 
 
@@ -45,736 +51,693 @@
 
 
 
-      <h1>Organizing Commitee</h1>
-      <p>The Educational Challenge is organized by the <a href="https://miccai.org/index.php/about-miccai/student-board/">MICCAI Student
-          Board</a>, with tremendous support from the <a href="http://miccai.org">MICCAI board</a>.</p>
+      <h1>MSB Board of Directors</h1>
+      <p style="margin-bottom: var(--space-xl);">Meet our diverse international team of dedicated young scientists who drive the MICCAI Student Board's mission to support and empower the next generation of researchers in medical imaging and computer-assisted interventions.</p>
+
+      <!-- Year Filter Tabs -->
+      <div class="year-filter-tabs-wrapper">
+        <div class="year-filter-tabs">
+          <button class="year-tab active" data-year="2025">2025</button>
+          <button class="year-tab" data-year="2024">2024</button>
+          <button class="year-tab" data-year="2023">2023</button>
+          <button class="year-tab" data-year="2022">2022</button>
+          <button class="year-tab" data-year="2021">2021</button>
+          <button class="year-tab" data-year="2020">2020</button>
+          <button class="year-tab" data-year="archive">Archive</button>
+        </div>
+      </div>
 
       <!-- 2025 MEMBERS -->
-      <h2>2025 MICCAI Student Board</h2>
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/narenakash.PNG">
-            </div>
-            <div class="content">
-              <a class="header">Naren Akash R J</a>
-              <div class="meta">
-                <span class="date">President</span>
-              </div>
-              <div class="description">
-                IIIT Hyderabad, India
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="http://www.narenakash.com/">
-                <i class="globe icon"></i>
-                Web
+      <div class="year-content" data-year="2025">
+      <h2 style="margin-bottom: var(--space-xl); color: var(--color-text); font-size: var(--font-size-xl);">2025 MICCAI Student Board</h2>
+      <div class="members-grid">
+        <div class="member-card">
+          <img src="img/2025members/narenakash.PNG" alt="Naren Akash R J" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Naren Akash R J</h3>
+            <div class="member-card__role" style="font-size: var(--font-size-sm);">President</div>
+            <div class="member-card__affiliation">IIIT Hyderabad, India</div>
+            <div class="member-card__links">
+              <a href="http://www.narenakash.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/amar_kumar.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Amar Kumar</a>
-              <div class="meta">
-                <span class="date">Vice President</span>
-              </div>
-              <div class="description">
-                McGill University, Canada
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.cim.mcgill.ca/~amarkr/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/amar_kumar.jpg" alt="Amar Kumar" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Amar Kumar</h3>
+            <div class="member-card__role" style="font-size: var(--font-size-sm);">Vice President</div>
+            <div class="member-card__affiliation">McGill University, Canada</div>
+            <div class="member-card__links">
+              <a href="https://www.cim.mcgill.ca/~amarkr/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/ahmed_nebli.png">
-            </div>
-            <div class="content">
-              <a class="header">Ahmed Nebli</a>
-              <div class="meta">
-                <span class="date">Educational Events Officer</span>
-              </div>
-              <div class="description">
-                FZ Jülich, Germany
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/nourhan_bayasi.jpg" alt="Nourhan Bayasi" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Nourhan Bayasi</h3>
+            <div class="member-card__role">Doctoral Events Officer</div>
+            <div class="member-card__affiliation">University of British Columbia, Canada</div>
+            <div class="member-card__links">
+              <a href="https://nourhanb.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/amin_ranem.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Amin Ramen</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                TU Darmstadt, Germany
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_121216.de.jsp">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/cosmin_bercea.png" alt="Cosmin Bercea" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Cosmin Bercea</h3>
+            <div class="member-card__role">Scientific Events Officer</div>
+            <div class="member-card__affiliation">TU Munich, Germany</div>
+            <div class="member-card__links">
+              <a href="https://cosmin-bercea.com" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/constantin_ulrich.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Constantin Ulrich</a>
-              <div class="meta">
-                <span class="date">Sports Events Officer</span>
-              </div>
-              <div class="description">
-                DKFZ, Germany<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.dkfz.de/en/mic/team/people/Constantin_Ulrich.html">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/constantin_ulrich.jpg" alt="Constantin Ulrich" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Constantin Ulrich</h3>
+            <div class="member-card__role">Sports Events Officer</div>
+            <div class="member-card__affiliation">DKFZ, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.dkfz.de/en/mic/team/people/Constantin_Ulrich.html" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/weina_jin.jpeg">
-            </div>
-            <div class="content">
-              <a class="header">Weina Jin</a>
-              <div class="meta">
-                <span class="date">Webinars Officer</span>
-              </div>
-              <div class="description">
-                Simon Fraser University, Canada
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://weina.me">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/weina_jin.jpeg" alt="Weina Jin" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Weina Jin</h3>
+            <div class="member-card__role">Webinars Officer</div>
+            <div class="member-card__affiliation">Simon Fraser University, Canada</div>
+            <div class="member-card__links">
+              <a href="https://weina.me" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/nourhan_bayasi.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Nourhan Bayasi</a>
-              <div class="meta">
-                <span class="date">Doctoral Events Officer</span>
-              </div>
-              <div class="description">
-                University of British Columbia, Canada
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://nourhanb.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/sue_min_cho.JPG" alt="Sue Min Cho" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Sue Min Cho</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Johns Hopkins University, USA</div>
+            <div class="member-card__links">
+              <a href="www.linkedin.com/in/suemincho" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/cosmin_bercea.png">
-            </div>
-            <div class="content">
-              <a class="header">Cosmin Bercea</a>
-              <div class="meta">
-                <span class="date">Scientific Events Officer</span>
-              </div>
-              <div class="description">
-                TU Munich, Germany<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://cosmin-bercea.com">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/bishal_swain.jpg" alt="Bishal Swain" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Bishal Swain</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Kumoh National Institute of Technology, South Korea</div>
+            <div class="member-card__links">
+              <a href="https://www.linkedin.com/in/bishal-swain/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/jan_mangulabnan.JPG">
-            </div>
-            <div class="content">
-              <a class="header">Jan Mangulabnan</a>
-              <div class="meta">
-                <span class="date">Public Relations Officer</span>
-              </div>
-              <div class="description">
-                Johns Hopkins University, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://janemilym.com/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/amin_ranem.jpg" alt="Amin Ramen" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Amin Ramen</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">TU Darmstadt, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_121216.de.jsp" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/nick_lemke.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Nick Lemke</a>
-              <div class="meta">
-                <span class="date">Public Relations Officer</span>
-              </div>
-              <div class="description">
-                TU Darmstadt, Germany<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://nickl1234567.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/jan_mangulabnan.JPG" alt="Jan Mangulabnan" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Jan Mangulabnan</h3>
+            <div class="member-card__role">Public Relations Officer</div>
+            <div class="member-card__affiliation">Johns Hopkins University, USA</div>
+            <div class="member-card__links">
+              <a href="https://janemilym.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/bishal_swain.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Bishal Swain</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Kumoh National Institute of Technology, South Korea
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.linkedin.com/in/bishal-swain/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/nick_lemke.jpg" alt="Nick Lemke" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Nick Lemke</h3>
+            <div class="member-card__role">Public Relations Officer</div>
+            <div class="member-card__affiliation">TU Darmstadt, Germany</div>
+            <div class="member-card__links">
+              <a href="https://nickl1234567.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/sue_min_cho.JPG">
-            </div>
-            <div class="content">
-              <a class="header">Sue Min Cho</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Johns Hopkins University, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="www.linkedin.com/in/suemincho">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/chanyoung_kim.png" alt="Chanyoung Kim" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Chanyoung Kim</h3>
+            <div class="member-card__role">Local Student Liason Officer</div>
+            <div class="member-card__affiliation">Yonsei University, South Korea</div>
+            <div class="member-card__links">
+              <a href="https://kochanha.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/divyanshu_tak.png">
-            </div>
-            <div class="content">
-              <a class="header">Divynashu Tak</a>
-              <div class="meta">
-                <span class="date">Executive Officer</span>
-              </div>
-              <div class="description">
-                Brigham and Women's Hospital, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.linkedin.com/in/divyanshu-tak-a9a35a127/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/ahmed_nebli.png" alt="Ahmed Nebli" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Ahmed Nebli</h3>
+            <div class="member-card__role">Educational Events Officer</div>
+            <div class="member-card__affiliation">FZ Jülich, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/chanyoung_kim.png">
-            </div>
-            <div class="content">
-              <a class="header">Chanyoung Kim</a>
-              <div class="meta">
-                <span class="date">Local Student Liason Officer</span>
-              </div>
-              <div class="description">
-                Yonsei University, South Korea
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://kochanha.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/divyanshu_tak.png" alt="Divynashu Tak" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Divynashu Tak</h3>
+            <div class="member-card__role">Executive Officer</div>
+            <div class="member-card__affiliation">Brigham and Women's Hospital, USA</div>
+            <div class="member-card__links">
+              <a href="https://www.linkedin.com/in/divyanshu-tak-a9a35a127/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/camila_gonzalez.png">
-            </div>
-            <div class="content">
-              <a class="header">Camila González</a>
-              <div class="meta">
-                <span class="date">Advisor - Past President</span>
-              </div>
-              <div class="description">
-                Stanford University, USA<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://med.stanford.edu/profiles/320362">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/camila_gonzalez.png" alt="Camila González" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Camila González</h3>
+            <div class="member-card__role">Advisor - Past President</div>
+            <div class="member-card__affiliation">Stanford University, USA</div>
+            <div class="member-card__links">
+              <a href="https://med.stanford.edu/profiles/320362" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/moritz_fuchs.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Moritz Fuchs</a>
-              <div class="meta">
-                <span class="date">Advisor - Past Vice President</span>
-              </div>
-              <div class="description">
-                TU Darmstadt, Germany<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_107584.de.jsp">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/moritz_fuchs.jpg" alt="Moritz Fuchs" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Moritz Fuchs</h3>
+            <div class="member-card__role">Advisor - Past Vice President</div>
+            <div class="member-card__affiliation">TU Darmstadt, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_107584.de.jsp" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
       </div>
 
-      <h2>2025 Advisory Members</h2>
+      <h3 style="margin-top: var(--space-xxxl); margin-bottom: var(--space-lg); color: var(--color-text); font-size: var(--font-size-lg); padding-bottom: var(--space-md); border-bottom: 2px solid var(--color-border);">2025 Advisory Members</h3>
 
-      <ul>
-        <li>
-          <a href="https://www.harryanthony.co.uk/">Harry Anthony</a>, Public Relations Officer 2024<br>
-          University of Oxford, UK
-        </li>
-        <li>
-          <a href="https://zapaishchykova.github.io/">Anna Zapaishchykova</a>, Executive Officer 2024<br>
-          Harvard Medical School, USA
-        </li>
-        <li>
-          <a href="">Paul Wilson</a>, Social Events Officer 2024<br>
-          Queen's University, Canada
-        </li>
-        <li>
-          <a href="https://benjamindkilleen.com/">Benjamin Killeen</a>, Social Events Officer 2024<br>
-          Johns Hopkins University
-        </li>
-        <li>
-          <a href="https://yanis.miraoui.com/">Yanis Najy Miraoui</a>, Local Student Liason 2024<br>
-          Stanford University, USA
-        </li>
+      <div class="members-grid">
+        <div class="member-card">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Harry Anthony</h3>
+            <div class="member-card__role">Public Relations Officer 2024</div>
+            <div class="member-card__affiliation">University of Oxford, UK</div>
+            <div class="member-card__links">
+              <a href="https://www.harryanthony.co.uk/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
+            </div>
+          </div>
+        </div>
 
-      </ul>
+        <div class="member-card">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Anna Zapaishchykova</h3>
+            <div class="member-card__role">Executive Officer 2024</div>
+            <div class="member-card__affiliation">Harvard Medical School, USA</div>
+            <div class="member-card__links">
+              <a href="https://zapaishchykova.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Paul Wilson</h3>
+            <div class="member-card__role">Social Events Officer 2024</div>
+            <div class="member-card__affiliation">Queen's University, Canada</div>
+            <div class="member-card__links">
+              <span class="member-card__link disabled">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </span>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Benjamin Killeen</h3>
+            <div class="member-card__role">Social Events Officer 2024</div>
+            <div class="member-card__affiliation">Johns Hopkins University</div>
+            <div class="member-card__links">
+              <a href="https://benjamindkilleen.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Yanis Najy Miraoui</h3>
+            <div class="member-card__role">Local Student Liason 2024</div>
+            <div class="member-card__affiliation">Stanford University, USA</div>
+            <div class="member-card__links">
+              <a href="https://yanis.miraoui.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
 
       <!-- 2024 MEMBERS -->
-      <h2>2024 MICCAI Student Board</h2>
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2025members/narenakash.PNG">
-            </div>
-            <div class="content">
-              <a class="header">Naren Akash R J</a>
-              <div class="meta">
-                <span class="date">President</span>
-              </div>
-              <div class="description">
-                IIIT Hyderabad, India
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.linkedin.com/in/narenakash-rj/">
-                <i class="globe icon"></i>
-                Web
+      <div class="year-content" data-year="2024">
+      <h2 style="margin-bottom: var(--space-xl); color: var(--color-text); font-size: var(--font-size-lg);">2024 MICCAI Student Board</h2>
+      <div class="members-grid">
+        <div class="member-card">
+          <img src="img/2025members/narenakash.PNG" alt="Naren Akash R J" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Naren Akash R J</h3>
+            <div class="member-card__role">President</div>
+            <div class="member-card__affiliation">IIIT Hyderabad, India</div>
+            <div class="member-card__links">
+              <a href="https://www.linkedin.com/in/narenakash-rj/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/moritz_fuchs.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Moritz Fuchs</a>
-              <div class="meta">
-                <span class="date">Vice President</span>
-              </div>
-              <div class="description">
-                TU Darmstadt, Germany
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_107584.de.jsp">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/moritz_fuchs.jpg" alt="Moritz Fuchs" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Moritz Fuchs</h3>
+            <div class="member-card__role">Vice President</div>
+            <div class="member-card__affiliation">TU Darmstadt, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_107584.de.jsp" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/amar_kumar.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Amar Kumar</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                McGill University, Canada
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.cim.mcgill.ca/~amarkr/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/amar_kumar.jpg" alt="Amar Kumar" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Amar Kumar</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">McGill University, Canada</div>
+            <div class="member-card__links">
+              <a href="https://www.cim.mcgill.ca/~amarkr/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/ahmed_nebli.png">
-            </div>
-            <div class="content">
-              <a class="header">Ahmed Nebli</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                FZ Jülich, Germany
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/ahmed_nebli.png" alt="Ahmed Nebli" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Ahmed Nebli</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">FZ Jülich, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/paul_wilson.jpeg">
-            </div>
-            <div class="content">
-              <a class="header">Paul Wilson</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Queen's University, Canada
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="">
-                <i class="globe icon"></i>
-                Web
-              </a>
+        <div class="member-card">
+          <img src="img/2024members/paul_wilson.jpeg" alt="Paul Wilson" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Paul Wilson</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Queen's University, Canada</div>
+            <div class="member-card__links">
+              <span class="member-card__link disabled">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </span>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/benjamin_killeen.jpeg">
-            </div>
-            <div class="content">
-              <a class="header">Benjamin Killeen</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Johns Hopkins University
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://benjamindkilleen.com ">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/benjamin_killeen.jpeg" alt="Benjamin Killeen" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Benjamin Killeen</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Johns Hopkins University</div>
+            <div class="member-card__links">
+              <a href="https://benjamindkilleen.com" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/harry_anthony.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Harry Anthony</a>
-              <div class="meta">
-                <span class="date">Public Relations Officer</span>
-              </div>
-              <div class="description">
-                University of Oxford, UK
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.harryanthony.co.uk/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/harry_anthony.jpg" alt="Harry Anthony" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Harry Anthony</h3>
+            <div class="member-card__role">Public Relations Officer</div>
+            <div class="member-card__affiliation">University of Oxford, UK</div>
+            <div class="member-card__links">
+              <a href="https://www.harryanthony.co.uk/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/anna_zapaishchykova.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Anna Zapaishchykova</a>
-              <div class="meta">
-                <span class="date">Executive Officer</span>
-              </div>
-              <div class="description">
-                Harvard Medical School, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://zapaishchykova.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/anna_zapaishchykova.jpg" alt="Anna Zapaishchykova" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Anna Zapaishchykova</h3>
+            <div class="member-card__role">Executive Officer</div>
+            <div class="member-card__affiliation">Harvard Medical School, USA</div>
+            <div class="member-card__links">
+              <a href="https://zapaishchykova.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/advaith_veturi.png">
-            </div>
-            <div class="content">
-              <a class="header">Advaith Veturi</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                CU Anschutz, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://machinelearningandme.wordpress.com/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/advaith_veturi.png" alt="Advaith Veturi" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Advaith Veturi</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">CU Anschutz, USA</div>
+            <div class="member-card__links">
+              <a href="https://machinelearningandme.wordpress.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/amin_ranem.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Amin Ramen</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                TU Darmstadt, Germany
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_121216.de.jsp">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/amin_ranem.jpg" alt="Amin Ramen" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Amin Ramen</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">TU Darmstadt, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_121216.de.jsp" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/constantin_ulrich.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Constantin Ulrich</a>
-              <div class="meta">
-                <span class="date">Sports Events Officer</span>
-              </div>
-              <div class="description">
-                DKFZ, Germany
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.dkfz.de/en/mic/team/people/Constantin_Ulrich.html">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/constantin_ulrich.jpg" alt="Constantin Ulrich" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Constantin Ulrich</h3>
+            <div class="member-card__role">Sports Events Officer</div>
+            <div class="member-card__affiliation">DKFZ, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.dkfz.de/en/mic/team/people/Constantin_Ulrich.html" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-
-
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/weina_jin.jpeg">
-            </div>
-            <div class="content">
-              <a class="header">Weina Jin</a>
-              <div class="meta">
-                <span class="date">Webinars Officer</span>
-              </div>
-              <div class="description">
-                Simon Fraser University, CA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://weina.me">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/weina_jin.jpeg" alt="Weina Jin" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Weina Jin</h3>
+            <div class="member-card__role">Webinars Officer</div>
+            <div class="member-card__affiliation">Simon Fraser University, CA</div>
+            <div class="member-card__links">
+              <a href="https://weina.me" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-
-
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/yanis_najy_miraoui.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Yanis Najy Miraoui</a>
-              <div class="meta">
-                <span class="date">Local Student Liason</span>
-              </div>
-              <div class="description">
-                Stanford University, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://yanis.miraoui.com/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/yanis_najy_miraoui.jpg" alt="Yanis Najy Miraoui" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Yanis Najy Miraoui</h3>
+            <div class="member-card__role">Local Student Liason</div>
+            <div class="member-card__affiliation">Stanford University, USA</div>
+            <div class="member-card__links">
+              <a href="https://yanis.miraoui.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2024members/camila_gonzalez.png">
-            </div>
-            <div class="content">
-              <a class="header">Camila González</a>
-              <div class="meta">
-                <span class="date">Past President</span>
-              </div>
-              <div class="description">
-                Stanford University, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://med.stanford.edu/profiles/320362">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2024members/camila_gonzalez.png" alt="Camila González" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Camila González</h3>
+            <div class="member-card__role">Past President</div>
+            <div class="member-card__affiliation">Stanford University, USA</div>
+            <div class="member-card__links">
+              <a href="https://med.stanford.edu/profiles/320362" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
@@ -803,306 +766,256 @@
         </li>
 
       </ul>
+      </div>
 
 
       <!-- 2023 MEMBERS -->
-      <h2>2023 MICCAI Student Board</h2>
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/camila_gonzalez.png">
-            </div>
-            <div class="content">
-              <a class="header">Camila González</a>
-              <div class="meta">
-                <span class="date">President</span>
-              </div>
-              <div class="description">
-                Stanford University, USA<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_93760.de.jsp">
-                <i class="globe icon"></i>
-                Web
+      <div class="year-content" data-year="2023">
+      <h2 style="margin-bottom: var(--space-xl); color: var(--color-text); font-size: var(--font-size-lg);">2023 MICCAI Student Board</h2>
+      <div class="members-grid">
+        <div class="member-card">
+          <img src="img/2023members/camila_gonzalez.png" alt="Camila González" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Camila González</h3>
+            <div class="member-card__role">President</div>
+            <div class="member-card__affiliation">Stanford University, USA</div>
+            <div class="member-card__links">
+              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_93760.de.jsp" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/naren_akash.png">
-            </div>
-            <div class="content">
-              <a class="header">Naren Akash R J</a>
-              <div class="meta">
-                <span class="date">Vice President</span>
-              </div>
-              <div class="description">
-                IIIT Hyderabad, India<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://researchweb.iiit.ac.in/~naren.akash/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/narenakash.PNG" alt="Naren Akash R J" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Naren Akash R J</h3>
+            <div class="member-card__role">Vice President</div>
+            <div class="member-card__affiliation">IIIT Hyderabad, India</div>
+            <div class="member-card__links">
+              <a href="https://researchweb.iiit.ac.in/~naren.akash/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/advaith_veturi.png">
-            </div>
-            <div class="content">
-              <a class="header">Advaith Veturi</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                University of Colorado Anschutz Medical Campus
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://machinelearningandme.wordpress.com/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/advaith_veturi.png" alt="Advaith Veturi" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Advaith Veturi</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">University of Colorado Anschutz Medical Campus</div>
+            <div class="member-card__links">
+              <a href="https://machinelearningandme.wordpress.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/bo_zhou.png">
-            </div>
-            <div class="content">
-              <a class="header">Bo Zhou</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                Yale University, USA<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://bbbbbbzhou.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/bo_zhou.png" alt="Bo Zhou" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Bo Zhou</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">Yale University, USA</div>
+            <div class="member-card__links">
+              <a href="https://bbbbbbzhou.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/ahmed_nebli.png">
-            </div>
-            <div class="content">
-              <a class="header">Ahmed Nebli</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                Forschungszentrum Jülich, Germany
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/ahmed_nebli.png" alt="Ahmed Nebli" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Ahmed Nebli</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">Forschungszentrum Jülich, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/emmanuelle_bourigault.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Emmanuelle Bourigault</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                University of Oxford, UK
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.emmanuellebourigault.com/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/emmanuelle_bourigault.jpg" alt="Emmanuelle Bourigault" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Emmanuelle Bourigault</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">University of Oxford, UK</div>
+            <div class="member-card__links">
+              <a href="https://www.emmanuellebourigault.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/angela_castillo.png">
-            </div>
-            <div class="content">
-              <a class="header">Angela Castillo</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Universidad de los Andes, Colombia
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://angelacast135.github.io/ ">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/angela_castillo.png" alt="Angela Castillo" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Angela Castillo</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Universidad de los Andes, Colombia</div>
+            <div class="member-card__links">
+              <a href="https://angelacast135.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/paul_weiser.JPG">
-            </div>
-            <div class="content">
-              <a class="header">Paul Weiser</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Medical University Vienna, Austria
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.cir.meduniwien.ac.at/team/paul-weiser/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/paul_weiser.JPG" alt="Paul Weiser" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Paul Weiser</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Medical University Vienna, Austria</div>
+            <div class="member-card__links">
+              <a href="https://www.cir.meduniwien.ac.at/team/paul-weiser/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/benjamin_killeen.png">
-            </div>
-            <div class="content">
-              <a class="header">Benjamin Killeen</a>
-              <div class="meta">
-                <span class="date">Sports Events Officer</span>
-              </div>
-              <div class="description">
-                Johns Hopkins University, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://benjamindkilleen.com">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/benjamin_killeen.png" alt="Benjamin Killeen" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Benjamin Killeen</h3>
+            <div class="member-card__role">Sports Events Officer</div>
+            <div class="member-card__affiliation">Johns Hopkins University, USA</div>
+            <div class="member-card__links">
+              <a href="https://benjamindkilleen.com" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/moritz_fuchs.png">
-            </div>
-            <div class="content">
-              <a class="header">Moritz Fuchs</a>
-              <div class="meta">
-                <span class="date">Public Relations Officer</span>
-              </div>
-              <div class="description">
-                Darmstadt University of Technology, Germany<br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_107584.de.jsp">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/moritz_fuchs.png" alt="Moritz Fuchs" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Moritz Fuchs</h3>
+            <div class="member-card__role">Public Relations Officer</div>
+            <div class="member-card__affiliation">Darmstadt University of Technology, Germany</div>
+            <div class="member-card__links">
+              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_107584.de.jsp" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/s_shailja.jpeg">
-            </div>
-            <div class="content">
-              <a class="header">S. Shailja</a>
-              <div class="meta">
-                <span class="date">Webinars Officer</span>
-              </div>
-              <div class="description">
-                University of California Santa Barbara, USA
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://web.ece.ucsb.edu/~shailja/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/s_shailja.jpeg" alt="S. Shailja" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">S. Shailja</h3>
+            <div class="member-card__role">Webinars Officer</div>
+            <div class="member-card__affiliation">University of California Santa Barbara, USA</div>
+            <div class="member-card__links">
+              <a href="https://web.ece.ucsb.edu/~shailja/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/paul_wilson.jpeg">
-            </div>
-            <div class="content">
-              <a class="header">Paul Wilson</a>
-              <div class="meta">
-                <span class="date">Executive Officer</span>
-              </div>
-              <div class="description">
-                Queen's University, Canada<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://web.ece.ucsb.edu/~shailja/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/paul_wilson.jpeg" alt="Paul Wilson" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Paul Wilson</h3>
+            <div class="member-card__role">Executive Officer</div>
+            <div class="member-card__affiliation">Queen's University, Canada</div>
+            <div class="member-card__links">
+              <a href="https://web.ece.ucsb.edu/~shailja/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2023members/weina_jin.jpeg">
-            </div>
-            <div class="content">
-              <a class="header">Weina Jin</a>
-              <div class="meta">
-                <span class="date">Local Student Liason</span>
-              </div>
-              <div class="description">
-                Simon Fraser University, Canada
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://weina.me">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2023members/weina_jin.jpeg" alt="Weina Jin" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Weina Jin</h3>
+            <div class="member-card__role">Local Student Liason</div>
+            <div class="member-card__affiliation">Simon Fraser University, Canada</div>
+            <div class="member-card__links">
+              <a href="https://weina.me" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
@@ -1126,282 +1039,236 @@
         </li>
 
       </ul>
+      </div>
 
       <!-- 2022 MEMBERS -->
-      <h2>2022 MICCAI Student Board</h2>
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/camila_gonzalez.png">
-            </div>
-            <div class="content">
-              <a class="header">Camila González</a>
-              <div class="meta">
-                <span class="date">President</span>
-              </div>
-              <div class="description">
-                Darmstadt University of Technology
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_93760.de.jsp">
-                <i class="globe icon"></i>
-                Web
+      <div class="year-content" data-year="2022">
+      <h2 style="margin-bottom: var(--space-xl); color: var(--color-text); font-size: var(--font-size-lg);">2022 MICCAI Student Board</h2>
+      <div class="members-grid">
+        <div class="member-card">
+          <img src="img/2022members/camila_gonzalez.png" alt="Camila González" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Camila González</h3>
+            <div class="member-card__role">President</div>
+            <div class="member-card__affiliation">Darmstadt University of Technology</div>
+            <div class="member-card__links">
+              <a href="https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_93760.de.jsp" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/vanessa_gonzalez.png">
-            </div>
-            <div class="content">
-              <a class="header">Vanessa Gonzalez</a>
-              <div class="meta">
-                <span class="date">Vice President</span>
-              </div>
-              <div class="description">
-                Ecole Central Nantes<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://vgonzalezd.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2022members/vanessa_gonzalez.png" alt="Vanessa Gonzalez" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Vanessa Gonzalez</h3>
+            <div class="member-card__role">Vice President</div>
+            <div class="member-card__affiliation">Ecole Central Nantes</div>
+            <div class="member-card__links">
+              <a href="https://vgonzalezd.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/jiahong_ouyang.png">
-            </div>
-            <div class="content">
-              <a class="header">Jiahong Ouyang</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                Stanford University<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="">
-                <i class="globe icon"></i>
-                Web
-              </a>
+        <div class="member-card">
+          <img src="img/2022members/jiahong_ouyang.png" alt="Jiahong Ouyang" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Jiahong Ouyang</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">Stanford University</div>
+            <div class="member-card__links">
+              <span class="member-card__link disabled">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </span>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/naren_akash.png">
-            </div>
-            <div class="content">
-              <a class="header">Naren Akash R J</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                IIIT Hyderabad India<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://researchweb.iiit.ac.in/~naren.akash/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/narenakash.PNG" alt="Naren Akash R J" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Naren Akash R J</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">IIIT Hyderabad India</div>
+            <div class="member-card__links">
+              <a href="https://researchweb.iiit.ac.in/~naren.akash/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/ahmed_nebli.png">
-            </div>
-            <div class="content">
-              <a class="header">Ahmed Nebli</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                Forschungszentrum Jülich
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2022members/ahmed_nebli.png" alt="Ahmed Nebli" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Ahmed Nebli</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">Forschungszentrum Jülich</div>
+            <div class="member-card__links">
+              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/bo_zhou.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Bo Zhou</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                Yale University
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://bbbbbbzhou.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2022members/bo_zhou.jpg" alt="Bo Zhou" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Bo Zhou</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">Yale University</div>
+            <div class="member-card__links">
+              <a href="https://bbbbbbzhou.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/angela_castillo.png">
-            </div>
-            <div class="content">
-              <a class="header">Angela Castillo</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Universidad de los Andes
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://angelacast135.github.io/ ">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2022members/angela_castillo.png" alt="Angela Castillo" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Angela Castillo</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Universidad de los Andes</div>
+            <div class="member-card__links">
+              <a href="https://angelacast135.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/paul_weiser.JPG">
-            </div>
-            <div class="content">
-              <a class="header">Paul Weiser</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Medical University Vienna
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="">
-                <i class="globe icon"></i>
-                Web
-              </a>
+        <div class="member-card">
+          <img src="img/2022members/paul_weiser.JPG" alt="Paul Weiser" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Paul Weiser</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Medical University Vienna</div>
+            <div class="member-card__links">
+              <span class="member-card__link disabled">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </span>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/benjamin_killeen.png">
-            </div>
-            <div class="content">
-              <a class="header">Benjamin Killeen</a>
-              <div class="meta">
-                <span class="date">Sports Events Officer</span>
-              </div>
-              <div class="description">
-                Johns Hopkins University<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://benjamindkilleen.com">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2022members/benjamin_killeen.png" alt="Benjamin Killeen" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Benjamin Killeen</h3>
+            <div class="member-card__role">Sports Events Officer</div>
+            <div class="member-card__affiliation">Johns Hopkins University</div>
+            <div class="member-card__links">
+              <a href="https://benjamindkilleen.com" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/mariana_da_silva.png">
-            </div>
-            <div class="content">
-              <a class="header">Mariana Da Silva</a>
-              <div class="meta">
-                <span class="date">Public Relations Officer</span>
-              </div>
-              <div class="description">
-                King's College London<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.imagingcdt.com/people/#mariana_ferreira_teixeira_da_silva">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2022members/mariana_da_silva.png" alt="Mariana Da Silva" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Mariana Da Silva</h3>
+            <div class="member-card__role">Public Relations Officer</div>
+            <div class="member-card__affiliation">King's College London</div>
+            <div class="member-card__links">
+              <a href="https://www.imagingcdt.com/people/#mariana_ferreira_teixeira_da_silva" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/s_shailja.jpg">
-            </div>
-            <div class="content">
-              <a class="header">S. Shailja</a>
-              <div class="meta">
-                <span class="date">Webinars Officer</span>
-              </div>
-              <div class="description">
-                University of California Santa Barbara
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://web.ece.ucsb.edu/~shailja/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2022members/s_shailja.jpg" alt="S. Shailja" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">S. Shailja</h3>
+            <div class="member-card__role">Webinars Officer</div>
+            <div class="member-card__affiliation">University of California Santa Barbara</div>
+            <div class="member-card__links">
+              <a href="https://web.ece.ucsb.edu/~shailja/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2022members/emmanuelle_bourigault.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Emmanuelle Bourigault</a>
-              <div class="meta">
-                <span class="date">Executive Officer</span>
-              </div>
-              <div class="description">
-                University of Oxford
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.emmanuellebourigault.com/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2022members/emmanuelle_bourigault.jpg" alt="Emmanuelle Bourigault" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Emmanuelle Bourigault</h3>
+            <div class="member-card__role">Executive Officer</div>
+            <div class="member-card__affiliation">University of Oxford</div>
+            <div class="member-card__links">
+              <a href="https://www.emmanuellebourigault.com/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
@@ -1442,283 +1309,237 @@
         </li>
 
       </ul>
+      </div>
 
 
       <!-- 2021 MEMBERS -->
-      <h2>2021 MICCAI Student Board</h2>
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/mark_asselin.png">
-            </div>
-            <div class="content">
-              <a class="header">Mark Asselin</a>
-              <div class="meta">
-                <span class="date">President</span>
-              </div>
-              <div class="description">
-                Queen's University<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://markasselin.github.io">
-                <i class="globe icon"></i>
-                Web
+      <div class="year-content" data-year="2021">
+      <h2 style="margin-bottom: var(--space-xl); color: var(--color-text); font-size: var(--font-size-lg);">2021 MICCAI Student Board</h2>
+      <div class="members-grid">
+        <div class="member-card">
+          <img src="img/2021members/mark_asselin.png" alt="Mark Asselin" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Mark Asselin</h3>
+            <div class="member-card__role">President</div>
+            <div class="member-card__affiliation">Queen's University</div>
+            <div class="member-card__links">
+              <a href="https://markasselin.github.io" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/amelia_jimenez_sanchez.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Amelia Jimenez-Sanchez</a>
-              <div class="meta">
-                <span class="date">Vice President</span>
-              </div>
-              <div class="description">
-                Pompeu Fabra University
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.upf.edu/web/ameliajimenez">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2021members/amelia_jimenez_sanchez.jpg" alt="Amelia Jimenez-Sanchez" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Amelia Jimenez-Sanchez</h3>
+            <div class="member-card__role">Vice President</div>
+            <div class="member-card__affiliation">Pompeu Fabra University</div>
+            <div class="member-card__links">
+              <a href="https://www.upf.edu/web/ameliajimenez" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/camila_gonzalez.png">
-            </div>
-            <div class="content">
-              <a class="header">Camila Gonzalez</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                Technical University Darmstadt<br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://de.linkedin.com/in/camila-gonz%C3%A1lez-618a5b188">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2021members/camila_gonzalez.png" alt="Camila Gonzalez" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Camila Gonzalez</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">Technical University Darmstadt</div>
+            <div class="member-card__links">
+              <a href="https://de.linkedin.com/in/camila-gonz%C3%A1lez-618a5b188" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/jiahong_ouyang.png">
-            </div>
-            <div class="content">
-              <a class="header">Jiahong Ouyang</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                Stanford University<br><br>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="">
-                <i class="globe icon"></i>
-                Web
-              </a>
+        <div class="member-card">
+          <img src="img/2021members/jiahong_ouyang.png" alt="Jiahong Ouyang" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Jiahong Ouyang</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">Stanford University</div>
+            <div class="member-card__links">
+              <span class="member-card__link disabled">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </span>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/ahmed_nebli.png">
-            </div>
-            <div class="content">
-              <a class="header">Ahmed Nebli</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                Forschungszentrum Jülich
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2021members/ahmed_nebli.png" alt="Ahmed Nebli" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Ahmed Nebli</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">Forschungszentrum Jülich</div>
+            <div class="member-card__links">
+              <a href="https://www.fz-juelich.de/SharedDocs/Personen/INM/INM-1/EN/Nebli_Ahmed.html?nn=534704" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/vanessa_gonzalez.png">
-            </div>
-            <div class="content">
-              <a class="header">Vanessa Gonzalez</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                Ecole Central Nantes
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://vgonzalezd.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2021members/vanessa_gonzalez.png" alt="Vanessa Gonzalez" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Vanessa Gonzalez</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">Ecole Central Nantes</div>
+            <div class="member-card__links">
+              <a href="https://vgonzalezd.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/angela_castillo.png">
-            </div>
-            <div class="content">
-              <a class="header">Angela Castillo</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Universidad de los Andes
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://angelacast135.github.io/ ">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2021members/angela_castillo.png" alt="Angela Castillo" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Angela Castillo</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Universidad de los Andes</div>
+            <div class="member-card__links">
+              <a href="https://angelacast135.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/paul_weiser.png">
-            </div>
-            <div class="content">
-              <a class="header">Paul Weiser</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Medical University Vienna
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="">
-                <i class="globe icon"></i>
-                Web
-              </a>
+        <div class="member-card">
+          <img src="img/2021members/paul_weiser.png" alt="Paul Weiser" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Paul Weiser</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Medical University Vienna</div>
+            <div class="member-card__links">
+              <span class="member-card__link disabled">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
+              </span>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/tobias_czempiel.png">
-            </div>
-            <div class="content">
-              <a class="header">Tobias Czempiel</a>
-              <div class="meta">
-                <span class="date">Sports Events Officer</span>
-              </div>
-              <div class="description">
-                Technical University Munich
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="http://campar.in.tum.de/Main/TobiasCzempiel">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2021members/tobias_czempiel.png" alt="Tobias Czempiel" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Tobias Czempiel</h3>
+            <div class="member-card__role">Sports Events Officer</div>
+            <div class="member-card__affiliation">Technical University Munich</div>
+            <div class="member-card__links">
+              <a href="http://campar.in.tum.de/Main/TobiasCzempiel" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/mariana_da_silva.png">
-            </div>
-            <div class="content">
-              <a class="header">Mariana Da Silva</a>
-              <div class="meta">
-                <span class="date">Public Relations Officer</span>
-              </div>
-              <div class="description">
-                King's College London
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.imagingcdt.com/people/#mariana_ferreira_teixeira_da_silva">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2021members/mariana_da_silva.png" alt="Mariana Da Silva" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Mariana Da Silva</h3>
+            <div class="member-card__role">Public Relations Officer</div>
+            <div class="member-card__affiliation">King's College London</div>
+            <div class="member-card__links">
+              <a href="https://www.imagingcdt.com/people/#mariana_ferreira_teixeira_da_silva" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/ylenia_giarratano.png">
-            </div>
-            <div class="content">
-              <a class="header">Ylenia Giarratano</a>
-              <div class="meta">
-                <span class="date">Webinars Officer</span>
-              </div>
-              <div class="description">
-                University of Edinburgh
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.ed.ac.uk/profile/ylenia-giarratano">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2021members/ylenia_giarratano.png" alt="Ylenia Giarratano" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Ylenia Giarratano</h3>
+            <div class="member-card__role">Webinars Officer</div>
+            <div class="member-card__affiliation">University of Edinburgh</div>
+            <div class="member-card__links">
+              <a href="https://www.ed.ac.uk/profile/ylenia-giarratano" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2021members/naren_akash.png">
-            </div>
-            <div class="content">
-              <a class="header">Naren Akash R J</a>
-              <div class="meta">
-                <span class="date">Executive Officer</span>
-              </div>
-              <div class="description">
-                IIIT Hyderabad
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://researchweb.iiit.ac.in/~naren.akash/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2025members/narenakash.PNG" alt="Naren Akash R J" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Naren Akash R J</h3>
+            <div class="member-card__role">Executive Officer</div>
+            <div class="member-card__affiliation">IIIT Hyderabad</div>
+            <div class="member-card__links">
+              <a href="https://researchweb.iiit.ac.in/~naren.akash/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
@@ -1759,260 +1580,218 @@
         </li>
 
       </ul>
+      </div>
 
       <!-- 2020 MEMBERS -->
-      <h2>2020 MICCAI Student Board</h2>
+      <div class="year-content" data-year="2020">
+      <h2 style="margin-bottom: var(--space-xl); color: var(--color-text); font-size: var(--font-size-lg);">2020 MICCAI Student Board</h2>
 
-      <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/anees_kazi.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Anees Kazi</a>
-              <div class="meta">
-                <span class="date">President</span>
-              </div>
-              <div class="description">
-                TU München
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="http://campar.in.tum.de/Main/AneesKazi">
-                <i class="globe icon"></i>
-                Web
+      <div class="members-grid">
+        <div class="member-card">
+          <img src="img/2020members/anees_kazi.jpg" alt="Anees Kazi" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Anees Kazi</h3>
+            <div class="member-card__role">President</div>
+            <div class="member-card__affiliation">TU München</div>
+            <div class="member-card__links">
+              <a href="http://campar.in.tum.de/Main/AneesKazi" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/mark_asselin.png">
-            </div>
-            <div class="content">
-              <a class="header">Mark Asselin</a>
-              <div class="meta">
-                <span class="date">Vice President</span>
-              </div>
-              <div class="description">
-                Queen's University
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://markasselin.github.io/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/mark_asselin.png" alt="Mark Asselin" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Mark Asselin</h3>
+            <div class="member-card__role">Vice President</div>
+            <div class="member-card__affiliation">Queen's University</div>
+            <div class="member-card__links">
+              <a href="https://markasselin.github.io/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/jorge_corral_acero.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Jorge Corral Acero</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                University of Oxford
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://eng.ox.ac.uk/people/jorge-corral-acero/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/jorge_corral_acero.jpg" alt="Jorge Corral Acero" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Jorge Corral Acero</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">University of Oxford</div>
+            <div class="member-card__links">
+              <a href="https://eng.ox.ac.uk/people/jorge-corral-acero/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/hendrik_burwinkel.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Hendrik Burwinkel</a>
-              <div class="meta">
-                <span class="date">Professional Events Officer</span>
-              </div>
-              <div class="description">
-                TU München
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="http://campar.in.tum.de/Main/HendrikBurwinkel">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/hendrik_burwinkel.jpg" alt="Hendrik Burwinkel" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Hendrik Burwinkel</h3>
+            <div class="member-card__role">Professional Events Officer</div>
+            <div class="member-card__affiliation">TU München</div>
+            <div class="member-card__links">
+              <a href="http://campar.in.tum.de/Main/HendrikBurwinkel" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/nathaniel_braman.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Nathaniel Braman</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                Case Western Reserve University
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.linkedin.com/in/nathanielbraman/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/nathaniel_braman.jpg" alt="Nathaniel Braman" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Nathaniel Braman</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">Case Western Reserve University</div>
+            <div class="member-card__links">
+              <a href="https://www.linkedin.com/in/nathanielbraman/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/kyle_wong.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Kyle Wong</a>
-              <div class="meta">
-                <span class="date">Educational Officer</span>
-              </div>
-              <div class="description">
-                The Hong Kong University of Science and Technology
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.linkedin.com/in/kyle-kl-wong/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/kyle_wong.jpg" alt="Kyle Wong" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Kyle Wong</h3>
+            <div class="member-card__role">Educational Officer</div>
+            <div class="member-card__affiliation">The Hong Kong University of Science and Technology</div>
+            <div class="member-card__links">
+              <a href="https://www.linkedin.com/in/kyle-kl-wong/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/ylenia_giarratano.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Ylenia Giarratano</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                University of Edinburgh
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.linkedin.com/in/ylenia-giarratano/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/ylenia_giarratano.jpg" alt="Ylenia Giarratano" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Ylenia Giarratano</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">University of Edinburgh</div>
+            <div class="member-card__links">
+              <a href="https://www.linkedin.com/in/ylenia-giarratano/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/david_garcia_mato.jpg">
-            </div>
-            <div class="content">
-              <a class="header">David Garcia Mato</a>
-              <div class="meta">
-                <span class="date">Social Events Officer</span>
-              </div>
-              <div class="description">
-                Universidad Carlos III de Madrid
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.linkedin.com/in/davidgarciamato/">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/david_garcia_mato.jpg" alt="David Garcia Mato" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">David Garcia Mato</h3>
+            <div class="member-card__role">Social Events Officer</div>
+            <div class="member-card__affiliation">Universidad Carlos III de Madrid</div>
+            <div class="member-card__links">
+              <a href="https://www.linkedin.com/in/davidgarciamato/" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/amelia_jimenez.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Amelia Jiménez-Sánchez</a>
-              <div class="meta">
-                <span class="date">Sports Officer</span>
-              </div>
-              <div class="description">
-                BCN MedTech, DTIC, Universitat Pompeu Fabra
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://www.upf.edu/web/ameliajimenez">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/amelia_jimenez.jpg" alt="Amelia Jiménez-Sánchez" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Amelia Jiménez-Sánchez</h3>
+            <div class="member-card__role">Sports Officer</div>
+            <div class="member-card__affiliation">BCN MedTech, DTIC, Universitat Pompeu Fabra</div>
+            <div class="member-card__links">
+              <a href="https://www.upf.edu/web/ameliajimenez" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/magda_paschali.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Magdalini Paschali</a>
-              <div class="meta">
-                <span class="date">Public Relations Officer</span>
-              </div>
-              <div class="description">
-                TU München
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="http://campar.in.tum.de/Main/MagdaPaschali">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/magda_paschali.jpg" alt="Magdalini Paschali" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Magdalini Paschali</h3>
+            <div class="member-card__role">Public Relations Officer</div>
+            <div class="member-card__affiliation">TU München</div>
+            <div class="member-card__links">
+              <a href="http://campar.in.tum.de/Main/MagdaPaschali" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
 
-        <div class="four wide column">
-          <div class="ui card">
-            <div class="image">
-              <img src="img/2020members/camila_gonzalez.jpg">
-            </div>
-            <div class="content">
-              <a class="header">Camila Gonzalez</a>
-              <div class="meta">
-                <span class="date">Executive Officer</span>
-              </div>
-              <div class="description">
-                TU Darmstadt
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://de.linkedin.com/in/camila-gonz%C3%A1lez-618a5b188">
-                <i class="globe icon"></i>
-                Web
+        <div class="member-card">
+          <img src="img/2020members/camila_gonzalez.jpg" alt="Camila Gonzalez" class="member-card__image">
+          <div class="member-card__content">
+            <h3 class="member-card__name">Camila Gonzalez</h3>
+            <div class="member-card__role">Executive Officer</div>
+            <div class="member-card__affiliation">TU Darmstadt</div>
+            <div class="member-card__links">
+              <a href="https://de.linkedin.com/in/camila-gonz%C3%A1lez-618a5b188" class="member-card__link" target="_blank">
+                <i class="fa fa-globe"></i>
+                <span>Website</span>
               </a>
+              <span class="member-card__link disabled">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span>
+              </span>
             </div>
           </div>
         </div>
@@ -2050,9 +1829,14 @@
           Delft University of Technology, The Netherlands
         </li>
       </ul>
+      </div>
 
 
-      <h2>2019 MICCAI Student Board</h2>
+      <!-- ARCHIVE (2019 and earlier) -->
+      <div class="year-content" data-year="archive">
+      <h2 style="margin-bottom: var(--space-xl); color: var(--color-text); font-size: var(--font-size-lg);">Historical Archive</h2>
+
+      <h3 style="margin-top: var(--space-xl); margin-bottom: var(--space-md); color: var(--color-text);">2019 MICCAI Student Board</h3>
 
       <ul>
         <li>
@@ -2121,7 +1905,7 @@
         </li>
       </ul>
 
-      <h2>2018 MICCAI Student Board</h2>
+      <h3 style="margin-top: var(--space-xxxl); margin-bottom: var(--space-md); color: var(--color-text);">2018 MICCAI Student Board</h3>
 
       <ul>
         <li>
@@ -2170,7 +1954,7 @@
 
       </ul>
 
-      <h2>2017 MICCAI Student Board</h2>
+      <h3 style="margin-top: var(--space-xxxl); margin-bottom: var(--space-md); color: var(--color-text);">2017 MICCAI Student Board</h3>
 
       <p>The third MICCAI Educational Challenge allows participants to submit tutorial papers, presentations or blog
         entries instead of videos. The timeline was also changed to allow rolling submissions throughout the year, with
@@ -2209,7 +1993,7 @@
 
       </ul>
 
-      <h2>2015 MICCAI Student Board</h2>
+      <h3 style="margin-top: var(--space-xxxl); margin-bottom: var(--space-md); color: var(--color-text);">2015 MICCAI Student Board</h3>
 
       <p>The second MICCAI Educational Challenge, along with the initiation of the MICCAI Educational Initiative and the
         Online Student Reading Group were organized by the 2015 MICCAI Student Board, comprising of the following
@@ -2261,7 +2045,7 @@
 
 
 
-      <h2>2014 MICCAI Student Board</h2>
+      <h3 style="margin-top: var(--space-xxxl); margin-bottom: var(--space-md); color: var(--color-text);">2014 MICCAI Student Board</h3>
 
       <p>The first MICCAI Educational Challenge was organized by the 2014 MICCAI Student Board, comprising of the
         following students.</p>
@@ -2306,23 +2090,239 @@
           Johns Hopkins University, MD, US
         </li>
       </ul>
+      </div>
 
       <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
       </script>
 
+<style>
+/* Year Filter Tabs */
+.year-filter-tabs-wrapper {
+  margin-bottom: var(--space-xl);
+  padding: var(--space-sm) var(--space-md);
+  background: #2c2c2c;
+  border-radius: var(--radius-sm);
+}
+
+[data-theme="dark"] .year-filter-tabs-wrapper {
+  background: #1a1a1a;
+}
+
+.year-filter-tabs {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.year-tab {
+  padding: var(--space-sm) var(--space-lg);
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.year-tab:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.year-tab.active {
+  color: #ffffff;
+}
+
+/* Year Content Sections */
+.year-content {
+  display: none;
+}
+
+.year-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Modern Member Grid */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+/* Cleaner Member Cards */
+.member-card {
+  background: var(--color-bg-content);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.member-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: var(--color-bg-elevated);
+}
+
+.member-card__content {
+  padding: var(--space-md);
+  padding-bottom: var(--space-sm);
+  text-align: left;
+}
+
+.member-card__name {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 var(--space-sm);
+  line-height: 1.2;
+}
+
+.member-card__role {
+  font-size: 10px;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin: 0 0 var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  line-height: 1.3;
+}
+
+.member-card__affiliation {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-sm);
+  line-height: 1.4;
+}
+
+.member-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin: 0;
+}
+
+.member-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.member-card__link:hover {
+  color: var(--color-text);
+}
+
+.member-card__link.disabled {
+  color: var(--color-text-muted);
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+</style>
+
+<script>
+// Year filter tabs functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('.year-tab');
+  const contents = document.querySelectorAll('.year-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const year = this.getAttribute('data-year');
+
+      // Remove active class from all tabs and contents
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+
+      // Add active class to clicked tab and corresponding content
+      this.classList.add('active');
+      const activeContent = document.querySelector(`.year-content[data-year="${year}"]`);
+      if (activeContent) {
+        activeContent.classList.add('active');
+      }
+    });
+  });
+
+  // Show 2025 by default
+  const defaultContent = document.querySelector('.year-content[data-year="2025"]');
+  if (defaultContent) {
+    defaultContent.classList.add('active');
+  }
+});
+</script>
+
     </div>
   </div>
 </div>
 
 <div id="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>MICCAI Student Board</h3>
+      <p>Supporting students and early-career researchers in medical image computing and computer-assisted interventions.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/miccaistudentboard/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@miccaieducationalinitiative" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://twitter.com/miccaistudents" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://benjamindkilleen.com/msb" target="_blank" rel="noopener noreferrer" aria-label="Slack"><i class="fa fa-slack"></i></a>
+      </div>
+    </div>
 
+    <div class="footer-section">
+      <h3>Programs</h3>
+      <ul>
+        <li><a href="challenge.html">Educational Challenge</a></li>
+        <li><a href="materials.html">MEC Library</a></li>
+        <li><a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a></li>
+        <li><a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Get Involved</h3>
+      <ul>
+        <li><a href="apply.html">Join MSB</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+        <li><a href="organization.html">Our Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:miccai-student-board@csail.mit.edu">Email Us</a></li>
+        <li><a href="https://miccai.org" target="_blank">MICCAI Society</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 MICCAI Student Board. All rights reserved.</p>
+  </div>
 </div>
 
 </div>
 
-<body>
 </body>
 
 </html>

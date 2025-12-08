@@ -2,111 +2,460 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>MICCAI Educational Initiative</title>
-<link href="style/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Join the MICCAI Student Board - Connect with researchers worldwide and contribute to medical imaging education.">
+<title>Join MSB - MICCAI Student Board</title>
 <link rel="shortcut icon" type="image/png" href="favicon.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<link href="style/cards.css" rel="stylesheet" type="text/css">
+<link href="style/layout.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="js/theme-toggle.js"></script>
+<script src="js/nav-dropdown.js"></script>
 </head>
 
+<body>
 
 <div id="titlebar-container">
-
-<div id="titlebar-container-logo">
-</div>
-
-<div id="titlebar-container-menu">
-  <a href="index.html">home</a> &nbsp; &middot;&nbsp;
-  <a href="apply.html">join msb</a> &nbsp; &middot;&nbsp;
-  <a href="materials.html">mec library</a> &nbsp; &middot;&nbsp;
-  <a href="events.html"><font color="#B43757">miccai 2025 events</font></a> &nbsp; &middot;&nbsp;
-  <a href="challenge.html">educational challenge</a> &nbsp; &middot; &nbsp;
-  <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">emerge</a> &nbsp; &middot; &nbsp;
-    <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">doctoral consortium</a> &nbsp; &middot; &nbsp;
-  <a href="organization.html">organization</a>
-</div>
-
-</div>
-
-<div id="brain-logo">
+  <div id="titlebar-container-logo">
+    <div class="logo-title">MICCAI Student Board</div>
+  </div>
+  <nav id="titlebar-container-menu">
+    <a href="index.html">Home</a>
+    <span class="nav-disabled">About MSB</span>
+    <a href="apply.html" class="active">Join MSB</a>
+    <a href="materials.html">MEC Library</a>
+    <a href="schedule2025.html">2025 Schedule</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle">Events</button>
+      <div class="nav-dropdown-menu">
+        <a href="challenge.html">Educational Challenge</a>
+        <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a>
+        <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a>
+      </div>
+    </div>
+    <a href="organization.html">Our Team</a>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-icon"><i class="fa fa-moon-o"></i></span>
+  </button>
 </div>
 
 <div id="main-content-container">
 <div id="page-content-container">
 <div id="page-content">
 
-    <img src="./img/2026msb/msb2026joinusbanner.png" style="width:100%" alt="MSB 2026 Call Banner" id="mec-banner"/>
-    <br/>
-    <span class="blink_text" style="color:red">Applications for MSB 2025 are now closed. Stay tuned for more updates on applications for MSB 2026!</span>
-    <br><br>
-    <h1>MICCAI Student Board 2025 - Call for New Members</h1>
-    <!--- <span class="blink_text" style="color:red">Applications for MSB 2024 are now closed. Stay tuned for more updates on applications for MSB 2025!</span>  --->
-    <hr>
-    <p>The MICCAI Student Board (MSB) is looking for new members!</p>
-    
-    <h3>About MICCAI Student Board</h3>
-    <p>The MSB represents student interests within the MICCAI community. We stimulate the involvement of students by providing opportunities for networking with experienced professional from academia and industry, organize webinars throughout the year, conduct doctoral programs to improve the visibility of young scientists, run scientific workshops such as MSB EMERGE and manage the MICCAI Educational Initiative.</p>
-    
-    <h3>Open Positions for MSB 2025</h3>
-    <p>The available MSB positions this year are:</p>
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-image">
+      <img src="./img/2026msb/msb2026joinusbanner.png" alt="MSB 2026 Call Banner" />
+    </div>
+    <div class="hero-text">
+      <h1>Join the MICCAI Student Board</h1>
 
-    <ul>
-        <li>
-          <b>🆕 Doctoral Programs Officer (One)​</b><br> 
-          Responsible for planning and executing events, such as PhD Thesis Madness, to help doctoral students showcase their work, network, and receive mentorship. Key tasks for this role include managing submissions, overseeing the review process, and handling logistics for the in-person event. Ideal candidates should be available to attend MICCAI 2025 in Daejeon, South Korea, to ensure a seamless and engaging experience.
-        </li>
-        <li>
-          <b>🆕 Scientific Programs Officer (One)​</b><br> 
-          Responsible for organizing and coordinating the MSB EMERGE workshop, including the paper submissions, review process, and workshop logistics, as a satellite event during the conference. Ideal candidates should be available to attend MICCAI 2025 in Daejeon, South Korea.
-        </li>
-        <li>
-          <b>Public Relations Officers (Two)​</b><br> 
-          Responsible for managing the MSB's public relations activities, including social media engagement, to enhance the organization's visibility and reputation. This involves managing MSB social media accounts, promoting MSB events, running the MSB YouTube channel, maintaining the website’s content, and writing quarterly newsletters. The two officers are expected to work closely together, splitting responsibilities to optimize effectiveness. Applications should indicate whether the candidate prefers focusing on social media management or the general online presence of MSB.
-        </li>
-        <li>
-          <b>Social Events Officers (Two)​</b><br> 
-          Responsible for planning and executing social events and cultural activities during the annual MICCAI conference. This includes organizing the evening and full-day tours and ensuring their smooth operation. Ideal candidates will be available to attend MICCAI 2025 in Daejeon, South Korea.
-        </li>
-        <li>
-          <b>Executive and Financial Officer (One)​</b><br> 
-          Responsible for managing the organization's finances, budgeting, and administrative tasks to ensure efficient operations and supporting the other MSB sub-groups. Early PhD students or Master's students are preferred candidates as this is an ideal entry position.
-        </li>
-        <li>
-          <b>Local Student Liaison Officer (One)​</b><br> 
-          Responsible for supporting the organization of local events during MICCAI 2025. Preference will be given to candidates with knowledge of South Korea, particularly Daejeon, and proficiency in the Korean language.
-        </li>
-    </ul>
+      <p style="margin-bottom: var(--space-lg);">The MICCAI Student Board is looking for new members to join our team and help advance medical imaging education and research worldwide.</p>
 
-    <p>The other positions that are not vacant this year are:<br>Professional Events Officer, Educational Initiatives Officer, Web Conference Officer and Sports Events Officer.</p>
+      <div style="margin-bottom: var(--space-lg);">
+        <p style="font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Quick Navigation</p>
+        <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+          <a href="#positions" style="display: inline-flex; align-items: center; padding: var(--space-xs) var(--space-md); background: var(--color-bg-elevated); border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); color: var(--color-text); font-weight: 500; text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.background='var(--color-primary)'; this.style.borderColor='var(--color-primary)'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text)';">Open Positions</a>
+          <a href="#apply" style="display: inline-flex; align-items: center; padding: var(--space-xs) var(--space-md); background: var(--color-bg-elevated); border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); color: var(--color-text); font-weight: 500; text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.background='var(--color-primary)'; this.style.borderColor='var(--color-primary)'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text)';">How to Apply</a>
+        </div>
+      </div>
 
-    <h3>How do you apply?</h3>
-    <p>Send an email to <a href="mailto:miccai.sb@gmail.com">miccai.sb@gmail.com</a> by November 28th with:</p>
-    <ul>
-        <li>Your CV including your name, where you're from, your current place of work, etc.</li>
-        <li>Your preferred position(s) as an MSB officer.</li>
-    </ul>
-    <p>In addition, please provide answers (maximum 500 words) to the following questions:</p>
-    <ul>
-        <li>Why would you like to join the MSB?</li>
-        <li>Did you participate in our events in the past? What did you like? What not?</li>
-        <li>What previous experience do you have that may be relevant to the position(s) you’re applying for?</li>
-        <li>Do you have any suggestions on how we can improve the experience of MSB events?</li>
-    </ul>
-    <p>If you apply, please add our address, <a href="mailto:miccai.sb@gmail.com">miccai.sb@gmail.com</a>, to your safe sender list to ensure that our emails properly reach you. We look forward to hearing from you!</p>
+      <div style="background: var(--color-success); padding: var(--space-md); border-radius: var(--radius-md); color: white; display: flex; justify-content: space-between; align-items: center; gap: var(--space-lg); flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+          <strong style="font-size: var(--font-size-base); display: block;">Applications for MSB 2026 are now open!</strong>
+          <span style="font-size: var(--font-size-sm);">Apply by December 31st, 2025</span>
+        </div>
+        <div id="countdown-timer" style="text-align: center; font-weight: 600; padding: var(--space-sm); background: rgba(255,255,255,0.15); border-radius: var(--radius-sm); flex-shrink: 0;">
+          <div style="font-size: var(--font-size-xl);" id="countdown-display">--d --h --m --s</div>
+          <div style="font-size: var(--font-size-xs); opacity: 0.9;">Time Remaining</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<div class="page-layout">
+  <div class="page-layout__main">
+    <section id="positions" style="margin-bottom: var(--space-xxxl);">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+        <h1 style="margin: 0;">Open Positions for MSB 2026</h1>
+        <button onclick="toggleSection('positions-content')" style="padding: var(--space-sm) var(--space-md); background: var(--color-bg-elevated); border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); font-weight: 600; cursor: pointer; transition: all var(--transition-fast); font-family: inherit; color: var(--color-text);" onmouseover="this.style.background='var(--color-primary)'; this.style.borderColor='var(--color-primary)'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text)';">
+          <span id="positions-content-toggle">▼ Hide</span>
+        </button>
+      </div>
 
-  
+      <div id="positions-content" style="transition: all var(--transition-base);">
+        <hr class="section-divider" style="margin: var(--space-md) 0 var(--space-xl);">
+
+        <div style="display: flex; flex-direction: column; gap: var(--space-xl);">
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div style="background: var(--color-primary); padding: var(--space-md) var(--space-lg);">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0; color: white;">Doctoral Programs Officer <span style="opacity: 0.8; font-size: var(--font-size-sm);">(One)</span></h3>
+          </div>
+          <p style="padding: var(--space-lg); line-height: 1.6; font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">Responsible for planning and executing events, such as PhD Thesis Madness, to help doctoral students showcase their work, network, and receive mentorship. Key tasks for this role include managing submissions, overseeing the review process, and handling logistics for the in-person event. Ideal candidates should be available to attend MICCAI 2026 in Abu Dhabi, UAE, to ensure a seamless and engaging experience.</p>
+        </div>
+
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div style="background: var(--color-primary); padding: var(--space-md) var(--space-lg);">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0; color: white;">Scientific Programs Officer <span style="opacity: 0.8; font-size: var(--font-size-sm);">(One)</span></h3>
+          </div>
+          <p style="padding: var(--space-lg); line-height: 1.6; font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">Responsible for organizing and coordinating the MSB EMERGE workshop, including the paper submissions, review process, and workshop logistics, as a satellite event during the conference. Ideal candidates should be available to attend MICCAI 2026 in Abu Dhabi, UAE.</p>
+        </div>
+
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div style="background: var(--color-primary); padding: var(--space-md) var(--space-lg);">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0; color: white;">Public Relations Officers <span style="opacity: 0.8; font-size: var(--font-size-sm);">(Two)</span></h3>
+          </div>
+          <p style="padding: var(--space-lg); line-height: 1.6; font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">Responsible for managing the MSB's public relations activities, including social media engagement, to enhance the organization's visibility and reputation. This involves managing MSB social media accounts, promoting MSB events, running the MSB YouTube channel, maintaining the website's content, and writing quarterly newsletters. The two officers are expected to work closely together, splitting responsibilities to optimize effectiveness. Applications should indicate whether the candidate prefers focusing on social media management or the general online presence of MSB.</p>
+        </div>
+
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div style="background: var(--color-primary); padding: var(--space-md) var(--space-lg);">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0; color: white;">Social Events Officers <span style="opacity: 0.8; font-size: var(--font-size-sm);">(Two)</span></h3>
+          </div>
+          <p style="padding: var(--space-lg); line-height: 1.6; font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">Responsible for planning and executing social events and cultural activities during the annual MICCAI conference. This includes organizing the evening and full-day tours and ensuring their smooth operation. Ideal candidates will be available to attend MICCAI 2026 in Abu Dhabi, UAE.</p>
+        </div>
+
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div style="background: var(--color-primary); padding: var(--space-md) var(--space-lg);">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0; color: white;">Executive and Financial Officer <span style="opacity: 0.8; font-size: var(--font-size-sm);">(One)</span></h3>
+          </div>
+          <p style="padding: var(--space-lg); line-height: 1.6; font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">Responsible for managing the organization's finances, budgeting, and administrative tasks to ensure efficient operations and supporting the other MSB sub-groups. Early PhD students or Master's students are preferred candidates as this is an ideal entry position.</p>
+        </div>
+
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div style="background: var(--color-primary); padding: var(--space-md) var(--space-lg);">
+            <h3 style="font-size: var(--font-size-base); font-weight: 600; margin: 0; color: white;">Local Student Liaison Officer <span style="opacity: 0.8; font-size: var(--font-size-sm);">(One)</span></h3>
+          </div>
+          <p style="padding: var(--space-lg); line-height: 1.6; font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">Responsible for supporting the organization of local events during MICCAI 2026. Preference will be given to candidates with knowledge of UAE, particularly Abu Dhabi, and proficiency in Arabic.</p>
+        </div>
+      </div>
+
+        <p style="margin-top: var(--space-lg); padding: var(--space-md); background: var(--color-bg-elevated); border-radius: var(--radius-md); font-size: var(--font-size-sm);">
+          <strong>Note:</strong> The other positions that are not vacant this year are: Professional Events Officer, Educational Initiatives Officer, Web Conference Officer and Sports Events Officer.
+        </p>
+      </div>
+    </section>
+
+    <section id="apply" style="margin-bottom: var(--space-xxxl);">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+        <h1 style="margin: 0;">How to Apply</h1>
+        <button onclick="toggleSection('apply-content')" style="padding: var(--space-sm) var(--space-md); background: var(--color-bg-elevated); border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); font-weight: 600; cursor: pointer; transition: all var(--transition-fast); font-family: inherit; color: var(--color-text);" onmouseover="this.style.background='var(--color-primary)'; this.style.borderColor='var(--color-primary)'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text)';">
+          <span id="apply-content-toggle">▼ Hide</span>
+        </button>
+      </div>
+
+      <div id="apply-content" style="transition: all var(--transition-base);">
+        <hr class="section-divider" style="margin: var(--space-md) 0 var(--space-xl);">
+
+        <div class="card" style="padding: var(--space-xxl);">
+        <h2 style="font-size: var(--font-size-xl); margin-bottom: var(--space-lg);">Submit Your Application</h2>
+
+        <p style="margin-bottom: var(--space-md); line-height: 1.8;">Complete the form below to apply for MSB 2026. Application deadline: <strong>December 31st, 2025</strong>.</p>
+
+        <div style="padding: var(--space-md); background: #FEF3C7; border: 2px solid #F59E0B; border-radius: var(--radius-md); margin-bottom: var(--space-xl); font-size: var(--font-size-sm); line-height: 1.6; color: #92400E;">
+          <strong style="display: block; margin-bottom: var(--space-xs);">⚠️ Important Note</strong>
+          This form does not save your responses as drafts. Please prepare your answers in a separate document before filling out the form to avoid losing your work.
+        </div>
+
+        <form action="https://formsubmit.co/miccai.sb@gmail.com" method="POST" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: var(--space-lg);">
+
+          <!-- Formsubmit.co configuration -->
+          <input type="hidden" name="_subject" value="New MSB 2026 Application">
+          <input type="hidden" name="_autoresponse" value="Thank you for applying to the MICCAI Student Board 2026! We have received your application and will review it carefully. You will hear from us by January 9th, 2026 regarding the outcome of your application. If you have any questions in the meantime, please don't hesitate to reach out to miccai.sb@gmail.com.">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+
+          <!-- Personal Information -->
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">Full Name <span style="color: #E53E3E;">*</span></label>
+            <input type="text" name="Full Name" required style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text);">
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">Email Address <span style="color: #E53E3E;">*</span></label>
+            <input type="email" name="email" required style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text);">
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">Current Institution <span style="color: #E53E3E;">*</span></label>
+            <input type="text" name="Current Institution" required style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text);">
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">Country of Current Residence <span style="color: #E53E3E;">*</span></label>
+            <input type="text" name="Country of Current Residence" required style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text);">
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">Home Country <span style="color: #E53E3E;">*</span></label>
+            <input type="text" name="Home Country" required style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text);">
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">Highest Degree Pursuing or Obtained <span style="color: #E53E3E;">*</span></label>
+            <select name="Highest Degree" id="degree-select" required onchange="handleDegreeChange()" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text);">
+              <option value="">Select degree...</option>
+              <option value="Bachelor's">Bachelor's</option>
+              <option value="Master's">Master's</option>
+              <option value="MD">MD</option>
+              <option value="PhD (Pursuing)">PhD (Pursuing)</option>
+              <option value="PhD (Obtained)">PhD (Obtained)</option>
+              <option value="Postdoc">Postdoc</option>
+              <option value="Other">Other (please specify)</option>
+            </select>
+            <input type="text" name="Highest Degree Other" id="degree-other" placeholder="Please specify your degree" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text); margin-top: var(--space-sm); display: none;">
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">Expected Year of Graduation <span style="color: #E53E3E;">*</span></label>
+            <input type="text" name="Expected Year of Graduation" required placeholder="e.g., 2026" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text);">
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-md); color: var(--color-text); font-size: var(--font-size-base);">Position(s) Applying For <span style="color: #E53E3E;">*</span></label>
+            <p style="font-size: var(--font-size-xs); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">Select at least one position</p>
+            <div style="display: flex; flex-direction: column; gap: var(--space-sm); padding: var(--space-md); background: var(--color-bg-page); border: 2px solid var(--color-border); border-radius: var(--radius-sm);">
+              <label style="display: flex; align-items: flex-start; gap: var(--space-sm); cursor: pointer; font-size: var(--font-size-base); color: var(--color-text);">
+                <input type="checkbox" name="Position(s) Applying For" value="Doctoral Programs Officer" style="margin-top: 4px; width: 18px; height: 18px; cursor: pointer;">
+                <span>Doctoral Programs Officer</span>
+              </label>
+              <label style="display: flex; align-items: flex-start; gap: var(--space-sm); cursor: pointer; font-size: var(--font-size-base); color: var(--color-text);">
+                <input type="checkbox" name="Position(s) Applying For" value="Scientific Programs Officer" style="margin-top: 4px; width: 18px; height: 18px; cursor: pointer;">
+                <span>Scientific Programs Officer</span>
+              </label>
+              <label style="display: flex; align-items: flex-start; gap: var(--space-sm); cursor: pointer; font-size: var(--font-size-base); color: var(--color-text);">
+                <input type="checkbox" name="Position(s) Applying For" value="Public Relations Officers" style="margin-top: 4px; width: 18px; height: 18px; cursor: pointer;">
+                <span>Public Relations Officers</span>
+              </label>
+              <label style="display: flex; align-items: flex-start; gap: var(--space-sm); cursor: pointer; font-size: var(--font-size-base); color: var(--color-text);">
+                <input type="checkbox" name="Position(s) Applying For" value="Social Events Officers" style="margin-top: 4px; width: 18px; height: 18px; cursor: pointer;">
+                <span>Social Events Officers</span>
+              </label>
+              <label style="display: flex; align-items: flex-start; gap: var(--space-sm); cursor: pointer; font-size: var(--font-size-base); color: var(--color-text);">
+                <input type="checkbox" name="Position(s) Applying For" value="Executive and Financial Officer" style="margin-top: 4px; width: 18px; height: 18px; cursor: pointer;">
+                <span>Executive and Financial Officer</span>
+              </label>
+              <label style="display: flex; align-items: flex-start; gap: var(--space-sm); cursor: pointer; font-size: var(--font-size-base); color: var(--color-text);">
+                <input type="checkbox" name="Position(s) Applying For" value="Local Student Liaison Officer" style="margin-top: 4px; width: 18px; height: 18px; cursor: pointer;">
+                <span>Local Student Liaison Officer</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">CV Upload (PDF, Max 5MB) <span style="color: #E53E3E;">*</span></label>
+            <input type="file" name="CV" accept=".pdf" required style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text);">
+          </div>
+
+          <!-- Application Questions -->
+          <h3 style="font-size: var(--font-size-lg); margin-top: var(--space-lg); margin-bottom: 0; color: var(--color-text);">Application Questions</h3>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0;">Please answer the following questions (maximum 500 words each):</p>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">1. Why would you like to join the MSB? <span style="color: #E53E3E;">*</span></label>
+            <textarea name="Question 1: Why join MSB" id="q1" required rows="10" maxlength="3000" oninput="updateCharCount('q1', 'q1-count')" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text); resize: vertical; line-height: 1.6;"></textarea>
+            <p id="q1-count" style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs); text-align: right;">0 / 3000 characters</p>
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">2. Did you participate in our events in the past? What did you like? What not? <span style="color: #E53E3E;">*</span></label>
+            <textarea name="Question 2: Past events experience" id="q2" required rows="10" maxlength="3000" oninput="updateCharCount('q2', 'q2-count')" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text); resize: vertical; line-height: 1.6;"></textarea>
+            <p id="q2-count" style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs); text-align: right;">0 / 3000 characters</p>
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">3. What previous experience do you have that may be relevant to the position(s) you're applying for? <span style="color: #E53E3E;">*</span></label>
+            <textarea name="Question 3: Relevant experience" id="q3" required rows="10" maxlength="3000" oninput="updateCharCount('q3', 'q3-count')" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text); resize: vertical; line-height: 1.6;"></textarea>
+            <p id="q3-count" style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs); text-align: right;">0 / 3000 characters</p>
+          </div>
+
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-text); font-size: var(--font-size-base);">4. Do you have any suggestions on how we can improve the experience of MSB events? <span style="color: #E53E3E;">*</span></label>
+            <textarea name="Question 4: Suggestions for improvement" id="q4" required rows="10" maxlength="3000" oninput="updateCharCount('q4', 'q4-count')" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 2px solid var(--color-border); border-radius: var(--radius-sm); font-size: var(--font-size-base); font-family: inherit; background: var(--color-bg-page); color: var(--color-text); resize: vertical; line-height: 1.6;"></textarea>
+            <p id="q4-count" style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs); text-align: right;">0 / 3000 characters</p>
+          </div>
+
+          <button type="submit" style="padding: var(--space-md) var(--space-xxl); background: var(--color-primary); color: white; border: none; border-radius: var(--radius-md); font-size: var(--font-size-base); font-weight: 600; cursor: pointer; transition: all var(--transition-fast); font-family: inherit;" onmouseover="this.style.background='var(--color-primary-dark)';" onmouseout="this.style.background='var(--color-primary)';">Submit Application</button>
+
+        </form>
+
+        <p style="padding: var(--space-md); background: var(--color-bg-elevated); border-radius: var(--radius-md); margin-top: var(--space-xl); line-height: 1.6; font-size: var(--font-size-sm);">
+          <strong>Note:</strong> You will receive a confirmation email at the address you provide. Please check your spam folder if you don't see it within a few minutes. For questions, contact <a href="mailto:miccai.sb@gmail.com" style="color: var(--color-primary); font-weight: 600;">miccai.sb@gmail.com</a>.
+        </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="page-layout__sidebar">
+    <div class="sidebar-section">
+      <h2>Key Dates</h2>
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr style="background: var(--color-primary);">
+            <td style="padding: var(--space-sm) var(--space-md); font-size: var(--font-size-xs); font-weight: 600; color: white; text-transform: uppercase; letter-spacing: 0.05em;">Event</td>
+            <td style="padding: var(--space-sm) var(--space-md); font-size: var(--font-size-xs); font-weight: 600; color: white; text-transform: uppercase; letter-spacing: 0.05em;">Date</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding: var(--space-md); font-size: var(--font-size-sm); color: var(--color-text-secondary);">Application Deadline</td>
+            <td style="padding: var(--space-md); font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text); white-space: nowrap;">Dec 31, 2025</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding: var(--space-md); font-size: var(--font-size-sm); color: var(--color-text-secondary);">Notification of Results</td>
+            <td style="padding: var(--space-md); font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text); white-space: nowrap;">Jan 09, 2026</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding: var(--space-md); font-size: var(--font-size-sm); color: var(--color-text-secondary);">First Full Board Meet</td>
+            <td style="padding: var(--space-md); font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text); white-space: nowrap;">Jan 12, 2026</td>
+          </tr>
+          <tr>
+            <td style="padding: var(--space-md); font-size: var(--font-size-sm); color: var(--color-text-secondary);">MICCAI 2026<br><span style="font-size: var(--font-size-xs);">Abu Dhabi, UAE</span></td>
+            <td style="padding: var(--space-md); font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text); white-space: nowrap;">Oct 4-8, 2026</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h2>Questions?</h2>
+      <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">Have questions about joining MSB? Get in touch!</p>
+      <a href="mailto:miccai-student-board@csail.mit.edu" style="display: inline-block; padding: var(--space-sm) var(--space-lg); background: var(--color-primary); color: white; border-radius: var(--radius-md); text-decoration: none; font-weight: 500; font-size: var(--font-size-sm); text-align: center; line-height: 1.4;">miccai-student-board@csail.mit.edu</a>
+    </div>
+  </div>
+</div>
 
 </div>
 </div>
 </div>
 
   <div id="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>MICCAI Student Board</h3>
+        <p>Supporting students and early-career researchers in medical image computing and computer-assisted interventions.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/miccaistudentboard/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@miccaieducationalinitiative" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+          <a href="https://twitter.com/miccaistudents" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://benjamindkilleen.com/msb" target="_blank" rel="noopener noreferrer" aria-label="Slack"><i class="fa fa-slack"></i></a>
+        </div>
+      </div>
 
+      <div class="footer-section">
+        <h3>Programs</h3>
+        <ul>
+          <li><a href="challenge.html">Educational Challenge</a></li>
+          <li><a href="materials.html">MEC Library</a></li>
+          <li><a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a></li>
+          <li><a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Get Involved</h3>
+        <ul>
+          <li><a href="apply.html">Join MSB</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="organization.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:miccai-student-board@csail.mit.edu">Email Us</a></li>
+          <li><a href="https://miccai.org" target="_blank">MICCAI Society</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> MICCAI Student Board. All rights reserved.</p>
+    </div>
   </div>
 
 </div>
 
-<body>
+<script>
+// Set current year in footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Countdown timer to December 31, 2025 23:59:59
+function updateCountdown() {
+  const deadline = new Date('2025-12-31T23:59:59').getTime();
+  const now = new Date().getTime();
+  const timeLeft = deadline - now;
+
+  if (timeLeft <= 0) {
+    document.getElementById('countdown-display').textContent = 'CLOSED';
+    return;
+  }
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  document.getElementById('countdown-display').textContent =
+    `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+// Update countdown every second
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+// Toggle section visibility
+function toggleSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  const toggle = document.getElementById(sectionId + '-toggle');
+
+  if (section.style.display === 'none') {
+    section.style.display = 'block';
+    toggle.textContent = '▼ Hide';
+  } else {
+    section.style.display = 'none';
+    toggle.textContent = '▶ Show';
+  }
+}
+
+// Handle degree selection "Other" option
+function handleDegreeChange() {
+  const degreeSelect = document.getElementById('degree-select');
+  const degreeOther = document.getElementById('degree-other');
+
+  if (degreeSelect.value === 'Other') {
+    degreeOther.style.display = 'block';
+    degreeOther.required = true;
+  } else {
+    degreeOther.style.display = 'none';
+    degreeOther.required = false;
+    degreeOther.value = '';
+  }
+}
+
+// Update character count for text areas
+function updateCharCount(textareaId, counterId) {
+  const textarea = document.getElementById(textareaId);
+  const counter = document.getElementById(counterId);
+  const count = textarea.value.length;
+  counter.textContent = `${count} / 3000 characters`;
+
+  // Change color when approaching limit
+  if (count > 2700) {
+    counter.style.color = '#E53E3E';
+  } else if (count > 2400) {
+    counter.style.color = '#F59E0B';
+  } else {
+    counter.style.color = 'var(--color-text-muted)';
+  }
+}
+</script>
+
 </body>
 </html>

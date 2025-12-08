@@ -1,0 +1,587 @@
+MICCAI Student Board Website - Engineering Documentation
+
+Project: https://miccai-sb.github.io/
+Repository: Static HTML/CSS/JS site deployed via GitHub Pages
+Last Updated: 2025-12-06
+
+=== SITE SUMMARY ===
+
+The MICCAI Student Board (MSB) website is the central hub for MICCAI student
+activities and initiatives. MSB serves as an umbrella organization presenting:
+- Educational Challenge (MEC) - Tutorial library and annual competition
+- EMERGE - Early career researcher support program
+- Doctoral Consortium - PhD student networking and development
+- MICCAI Conference Events - Workshops, socials, tours, networking
+- MSB Membership - Board members, organization, and how to join
+- Resources Library - Educational materials and tutorials
+
+Technology: Plain HTML/CSS/JS with modern CSS features (Cards 2.0)
+Deployment: GitHub Pages (static file hosting, no build process)
+Content Management: JSON files for dynamic content (updates, highlights)
+
+Current Status: Legacy "MICCAI Educational Initiative" site
+Target Status: Professional MSB organization website with modern card-based design
+
+=== APPROVED DESIGN DIRECTION ===
+
+Direction B: Modern Card-Based Layout (Cards 2.0 Enhancement)
+
+Focus on visual hierarchy and promotional content with enhanced card-based sections.
+MSB presented as umbrella organization; initiatives showcased as distinct programs.
+
+Key Design Elements:
+- Hero section with MSB branding and tagline
+- Cards 2.0: Modern webkit features (glassmorphism, smooth transitions, gradients)
+- Responsive grid layout for programs, updates, and highlights
+- Light/Dark mode toggle with theme persistence
+- Sticky navigation with mobile hamburger menu
+- Professional, welcoming aesthetic suitable for student organization
+- JSON-driven dynamic content for easy maintenance
+
+Cards 2.0 Features:
+- CSS Grid layouts with responsive breakpoints
+- Glassmorphism effects (backdrop-filter, semi-transparency)
+- Layered box-shadows for depth
+- Smooth hover transitions and scale effects
+- Gradient borders and accents
+- Modern webkit features with graceful degradation
+- Adaptive styling for light/dark modes
+- Interactive states and micro-animations
+
+Rationale: Primary goal is promoting MSB activities to MICCAI community members.
+Enhanced card layout provides clear visual separation and showcases breadth of programs.
+
+=== BRANDING DECISIONS ===
+
+Primary Branding: "MICCAI Student Board" (MSB)
+Site Title: Change from "MICCAI Educational Initiative" to "MICCAI Student Board"
+Logo Strategy:
+  - MSB logo placeholder in header (to be replaced with actual logo)
+  - Brain logo: Keep on MEC page only, remove from background elsewhere
+  - Remove fixed background brain logo from most pages
+
+Navigation Hierarchy:
+  Home (MSB introduction)
+  About MSB
+  Our Programs:
+    - Educational Challenge (MEC)
+    - EMERGE
+    - Doctoral Consortium
+    - MICCAI Events
+    - Resources Library
+  Join MSB
+  Members & Organization
+
+=== HOMEPAGE STRUCTURE ===
+
+Layout Flow (top to bottom):
+
+1. NAVIGATION (sticky header)
+   - MSB logo placeholder (left)
+   - Menu items (center/right)
+   - Light/Dark mode toggle (top-right)
+
+2. HERO SECTION
+   - Bold headline: "MICCAI Student Board"
+   - Tagline/mission statement
+   - Primary CTA: "Join MSB" button
+   - Clean, minimal design
+
+3. WHO WE ARE
+   - 2-3 paragraphs about MSB mission and purpose
+   - What we do, why we exist, who we serve
+
+4. OUR PROGRAMS (Cards 2.0 grid)
+   - MEC (Educational Challenge)
+   - EMERGE
+   - Doctoral Consortium
+   - MICCAI Events
+   - Resources Library
+   - Each card: icon/image, title, description, link
+
+5. LATEST UPDATES (JSON-driven)
+   - Dynamic news feed from data/updates.json
+   - 3-4 announcement cards
+   - Format: date, title, description, link, type
+   - Types: announcement, event, deadline, media
+
+6. MEET THE BOARD
+   - Grid of current member photos (6-8 featured)
+   - "View All Members" link to organization.html
+
+7. HIGHLIGHTS (mixed content)
+   - Impact metrics (stats cards)
+   - Featured tutorials/submissions
+   - Media coverage and mentions
+   - Success stories/testimonials
+   - Flexible card types for different content
+
+8. CONNECT WITH US
+   - Social media links
+   - Contact email
+   - Newsletter signup (optional)
+
+=== CODING CONVENTIONS ===
+
+HTML:
+- Use semantic HTML5 elements (header, nav, main, section, article, footer)
+- Indent with 2 spaces (no tabs)
+- Always include DOCTYPE, proper head/body structure
+- Self-closing tags use /> for consistency
+- Attribute order: class, id, data-*, src/href, other attributes
+- All images must have alt attributes
+- Use aria-* attributes where needed for accessibility
+- IMPORTANT: Body tag must wrap all content, not appear at end
+
+CSS:
+- Indent with 2 spaces
+- Use kebab-case for class names (e.g., card-container, hero-section)
+- BEM naming for components: block__element--modifier
+- Group related rules together with comments
+- Properties alphabetically ordered within rule
+- Mobile-first media queries
+- Use CSS custom properties (CSS variables) for all theming
+- Avoid !important unless absolutely necessary
+- Use modern CSS features (Grid, Flexbox, backdrop-filter, etc.)
+
+JavaScript:
+- Use modern ES6+ syntax (const/let, arrow functions, template literals)
+- Indent with 2 spaces
+- Use strict mode
+- camelCase for variables and functions
+- Add comments for complex logic
+- Prefer vanilla JS over jQuery for new code
+- Store preferences in localStorage (theme, etc.)
+
+File Naming:
+- Lowercase with hyphens for multi-word files
+- Descriptive names (materials.html not mat.html)
+- CSS files named after component/page
+- JS files named after functionality
+- JSON data files in data/ directory
+
+=== STYLE GUIDE ===
+
+Typography:
+- Current: Multiple Google Fonts (Roboto, Merriweather Sans, Open Sans, Noto Sans)
+- Proposed: Consolidate to 1-2 fonts for performance
+  - Headings: Roboto (300, 400, 500 weights)
+  - Body: Merriweather Sans OR system font stack
+  - Monospace: System monospace stack for code
+- Line heights: 1.5 for body, 1.2 for headings
+- Responsive font sizing using clamp() or media queries
+
+Colors:
+- Palette: Range of blues with aesthetic flexibility
+- Primary Blue: (TBD - to be determined in Phase 3)
+- Accent Red: #B43757 (current highlight color)
+- Text Light Mode: #000000 on #FFFFFF
+- Text Dark Mode: #FFFFFF on #1A1A1A
+- Background Light: #FFFFFF (content), #EEEEEE (page)
+- Background Dark: #1A1A1A (content), #0D0D0D (page)
+- Borders Light: #AAAAAA
+- Borders Dark: #333333
+
+Implementation:
+- All colors defined as CSS custom properties
+- Two sets: --color-* for light mode, overridden in [data-theme="dark"]
+- Ensure WCAG AA contrast ratios (4.5:1 for text, 3:1 for large text)
+- Consider blue color psychology: trust, professionalism, calm
+
+Layout:
+- Current: Fixed 960px width
+- Target: Responsive with max-width 1200px
+- Container padding: 20px mobile, 40px desktop
+- Breakpoints:
+  - Mobile: 0-768px
+  - Tablet: 769px-1024px
+  - Desktop: 1025px+
+- Use CSS Grid for card layouts (auto-fit, minmax)
+- Use Flexbox for navigation and smaller components
+- Maintain consistent spacing scale
+
+Spacing Scale (base unit: 8px):
+- xs: 4px
+- sm: 8px
+- md: 16px
+- lg: 24px
+- xl: 32px
+- xxl: 48px
+- xxxl: 64px
+
+Cards 2.0 Styling:
+- Border radius: 12px (cards), 8px (buttons)
+- Box shadow layers:
+  - Light: 0 2px 8px rgba(0,0,0,0.1), 0 4px 16px rgba(0,0,0,0.05)
+  - Dark: 0 2px 8px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2)
+- Hover: transform: translateY(-4px), enhanced shadow
+- Transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+- Glassmorphism: backdrop-filter: blur(10px), rgba backgrounds
+- Gradient accents: subtle linear-gradients for borders/overlays
+
+=== LIGHT/DARK MODE IMPLEMENTATION ===
+
+Technical Approach:
+- CSS custom properties for all colors
+- HTML attribute: <html data-theme="light|dark">
+- JavaScript toggle button in header
+- localStorage persists user preference
+- Default: light mode
+- No build process required
+
+CSS Structure:
+:root {
+  /* Light mode colors (default) */
+}
+
+[data-theme="dark"] {
+  /* Dark mode color overrides */
+}
+
+JavaScript:
+- Check localStorage on page load
+- Apply saved theme or default to light
+- Toggle button switches data-theme attribute
+- Save preference to localStorage
+- Smooth transition between modes
+
+=== IMPLEMENTATION PHASES ===
+
+PHASE 1: Foundation (Critical fixes + responsive foundation)
+Status: In Progress
+Complexity: Low-Medium
+
+Tasks:
+- [x] Create .claude-project documentation file
+- [ ] Fix HTML structure (move body tag to proper position in all files)
+- [ ] Add viewport meta tags to all pages
+- [ ] Convert HTTP font imports to HTTPS in style.css
+- [ ] Create base responsive CSS foundation
+- [ ] Establish CSS custom properties for colors and theming
+- [ ] Implement light/dark mode foundation (HTML, CSS, JS)
+- [ ] Create Cards 2.0 webkit component CSS
+
+PHASE 2: Rebranding (MSB identity and content restructure)
+Status: Not started
+Complexity: Medium
+
+Tasks:
+- [ ] Update site title in all HTML files
+- [ ] Change "MICCAI Educational Initiative" to "MICCAI Student Board"
+- [ ] Restructure navigation for MSB-first hierarchy
+- [ ] Remove brain background logo (except MEC page)
+- [ ] Add MSB logo placeholder in header
+- [ ] Rewrite homepage content (hero, about, sections)
+- [ ] Update meta descriptions for SEO
+- [ ] Review all copy for consistent MSB messaging
+- [ ] Update email addresses and contact info if needed
+
+PHASE 3: Homepage Redesign (Cards 2.0 layout implementation)
+Status: Not started
+Complexity: High
+
+Tasks:
+- [ ] Design and implement hero section
+- [ ] Create "Who We Are" section
+- [ ] Build "Our Programs" card grid (MEC, EMERGE, DC, Events, Resources)
+- [ ] Create data/updates.json structure
+- [ ] Implement "Latest Updates" section with JSON rendering
+- [ ] Build "Meet the Board" member grid
+- [ ] Create "Highlights" section with mixed content types
+- [ ] Implement "Connect With Us" footer section
+- [ ] Finalize responsive grid system
+- [ ] Add smooth scroll and navigation behavior
+
+PHASE 4: Additional Pages and Polish
+Status: Not started
+Complexity: Medium-High
+
+Tasks:
+- [ ] Update navigation across all pages
+- [ ] Standardize page templates
+- [ ] Update materials.html with Cards 2.0
+- [ ] Update organization.html with improved member grid
+- [ ] Update events.html styling (keep FullCalendar)
+- [ ] Update challenge.html (keep brain logo here)
+- [ ] Update apply.html with modern form styling
+- [ ] Add missing alt attributes to all images
+- [ ] Optimize large images (34 images over 1MB)
+- [ ] Add lazy loading to images (loading="lazy")
+- [ ] Performance audit and improvements
+- [ ] Accessibility audit (WAVE, Lighthouse)
+- [ ] Cross-browser testing
+- [ ] Mobile device testing
+
+=== TECHNICAL DEBT ===
+
+Priority 1 (Critical - Phase 1):
+- [ ] Fix HTML structure: body tag at end of file instead of wrapping content
+- [ ] Add viewport meta tags: all pages missing mobile responsiveness
+- [ ] Fix mixed content: HTTP font imports cause warnings on HTTPS
+- [ ] Create responsive CSS foundation
+
+Priority 2 (High - Phase 2):
+- [ ] Extract duplicate navigation: same markup repeated across 7 HTML files
+- [ ] Implement responsive CSS: fixed 960px width not mobile-friendly
+- [ ] Remove inline styles: scattered style attributes in HTML
+- [ ] Fix semantic HTML: improve heading hierarchy and structure
+- [ ] Remove brain background logo from non-MEC pages
+
+Priority 3 (Medium - Phase 3/4):
+- [ ] Optimize large images: 34 images over 1MB (performance impact)
+- [ ] Update dependencies: Semantic UI 2.4.1 is outdated
+- [ ] Lazy load images: implement native loading="lazy"
+- [ ] Consolidate fonts: 4 Google Fonts is excessive
+
+Priority 4 (Low - Phase 4):
+- [ ] Minify assets: unminified CSS/JS files (optional)
+- [ ] Consider modern formats: WebP images with fallbacks (optional)
+
+=== DEPENDENCIES ===
+
+Current (Runtime):
+- Semantic UI 2.4.1 (CSS framework) - CDN
+- Font Awesome 4.7.0 (icons) - CDN
+- jQuery (multiple versions, needs consolidation)
+- Google Fonts (Roboto, Open Sans, Noto Sans, Merriweather Sans) - CDN
+- Facebook SDK (social media integration)
+- FullCalendar 6.1.9 (events page only)
+
+Proposed Changes:
+- Keep Semantic UI for now (consider removal in future)
+- Update to Font Awesome 6.x or use CSS-only icons
+- Consolidate to single jQuery version or remove
+- Reduce to 1-2 Google Fonts
+- Keep Facebook SDK and FullCalendar
+
+Development Tools (Phase 4, optional):
+- Image optimization: Sharp, Squoosh, or TinyPNG (manual)
+- Code formatting: Prettier (optional, local only)
+- Linting: ESLint, Stylelint (optional, local only)
+
+Decision: Keep dependencies minimal. No npm/build process for deployment.
+All dev tools are local/optional for code quality only.
+
+=== FILE STRUCTURE ===
+
+Current:
+/
+├── index.html (homepage)
+├── apply.html (join MSB)
+├── challenge.html (MEC details - keeps brain logo)
+├── events.html (MICCAI events)
+├── home.html (redirects to index)
+├── materials.html (tutorial library)
+├── organization.html (members directory)
+├── favicon.png
+├── style/
+│   ├── style.css (main stylesheet)
+│   └── randomvideo.css
+├── js/
+│   ├── jquery.min.js
+│   ├── latex.js
+│   ├── randomvideo.js
+│   └── (other utilities)
+├── img/ (263 files, 118MB)
+│   ├── 2020members/
+│   ├── 2021mec/
+│   ├── (year-based subdirectories)
+└── materials/ (28 files, 105MB PDFs)
+
+Proposed additions:
+├── data/
+│   ├── updates.json (news/announcements)
+│   └── highlights.json (optional: featured content)
+├── style/
+│   ├── theme.css (CSS custom properties)
+│   ├── cards.css (Cards 2.0 components)
+│   └── responsive.css (media queries)
+├── js/
+│   ├── theme-toggle.js (light/dark mode)
+│   ├── updates-render.js (JSON to HTML)
+│   └── navigation.js (mobile menu)
+
+Note: May consolidate CSS files into single updated style.css
+
+=== DATA STRUCTURE ===
+
+updates.json format:
+[
+  {
+    "date": "2025-12-01",
+    "title": "MICCAI 2026 in Abu Dhabi",
+    "description": "Join us at MICCAI 2026 in Abu Dhabi, UAE",
+    "link": "events.html",
+    "type": "announcement"
+  },
+  {
+    "date": "2025-11-15",
+    "title": "MEC 2025 Submissions Open",
+    "description": "Submit your educational tutorials by August 15th",
+    "link": "challenge.html",
+    "type": "deadline"
+  }
+]
+
+Types: announcement, event, deadline, media, highlight
+
+highlights.json format (optional):
+[
+  {
+    "type": "metric",
+    "value": "500+",
+    "label": "Tutorials Created",
+    "icon": "book"
+  },
+  {
+    "type": "feature",
+    "title": "Featured Tutorial",
+    "description": "Deep Learning for Medical Imaging",
+    "link": "materials.html#tutorial-123",
+    "image": "img/featured/tutorial-123.png"
+  },
+  {
+    "type": "testimonial",
+    "quote": "MSB helped me connect with researchers worldwide",
+    "author": "PhD Student, University X",
+    "role": "MEC 2024 Winner"
+  }
+]
+
+=== ACCESSIBILITY REQUIREMENTS ===
+
+WCAG 2.1 Level AA Compliance:
+- All images must have meaningful alt text
+- Color contrast ratios minimum 4.5:1 for normal text
+- Color contrast ratios minimum 3:1 for large text
+- Keyboard navigation must work for all interactive elements
+- Focus indicators must be visible and clear
+- Form inputs must have associated labels
+- Semantic HTML structure (headings, landmarks, lists)
+- Skip navigation link for screen readers
+- Responsive design for zoom up to 200%
+- Light/dark mode must both meet contrast requirements
+
+Testing Tools:
+- WAVE Browser Extension
+- axe DevTools
+- Lighthouse (Chrome DevTools)
+- Keyboard-only navigation testing
+- Screen reader testing (NVDA/JAWS/VoiceOver)
+
+=== PERFORMANCE TARGETS ===
+
+Metrics (Lighthouse):
+- Performance: >90
+- Accessibility: >95
+- Best Practices: >90
+- SEO: >90
+
+Key Optimizations:
+- Image compression and modern formats
+- Lazy loading for below-fold images
+- Minimize render-blocking resources
+- Reduce total page size to under 2MB per page
+- First Contentful Paint under 2 seconds
+- Largest Contentful Paint under 2.5 seconds
+- Cumulative Layout Shift under 0.1
+
+=== BROWSER SUPPORT ===
+
+Target Browsers:
+- Chrome (last 2 versions)
+- Firefox (last 2 versions)
+- Safari (last 2 versions)
+- Edge (last 2 versions)
+- Mobile Safari (iOS 12+)
+- Chrome Mobile (Android 8+)
+
+Progressive Enhancement:
+- Core content accessible without JavaScript
+- CSS Grid with Flexbox fallback for older browsers
+- backdrop-filter with solid background fallback
+- Modern features gracefully degrade
+
+=== DEPLOYMENT ===
+
+Process: Simple GitHub push to master branch
+- No build step required
+- No compilation or bundling
+- Static files served directly by GitHub Pages
+- Changes go live automatically after push
+- DNS: miccai-sb.github.io
+
+Testing before push:
+- Local server: python3 -m http.server 8000
+- Test all pages and interactions
+- Verify responsive behavior
+- Check light/dark mode toggle
+- Validate JSON syntax
+
+=== IMPLEMENTATION LOG ===
+
+2025-12-06: Project initiation
+- Analyzed repository structure and identified technical debt
+- Proposed 3 redesign directions
+- User selected Direction B (Modern Card-Based Layout)
+- User confirmed MSB umbrella structure and full rebrand
+- User approved Cards 2.0 enhancement with webkit features
+- User approved light/dark mode implementation
+- User approved JSON-driven dynamic content
+- Decided to keep brain logo only on MEC page
+- Decided on blue color palette with aesthetic flexibility
+- Decided to keep deployment simple (no build process)
+- Created .claude-project documentation file
+- Started Phase 1: Foundation work
+
+(This section will be updated as work progresses)
+
+=== DECISION LOG ===
+
+2025-12-06:
+- Redesign Direction: B (Modern Card-Based Layout) - APPROVED
+- Enhancement: Cards 2.0 with modern webkit features - APPROVED
+- Site Structure: MSB as umbrella, initiatives as programs - APPROVED
+- Branding: Full rebrand to "MICCAI Student Board" - APPROVED
+- Brain Logo: Keep on MEC page only, remove elsewhere - APPROVED
+- Color Palette: Range of blues with aesthetic flexibility - APPROVED
+- Light/Dark Mode: Implement with CSS custom properties + localStorage - APPROVED
+- Dynamic Content: JSON files for updates and highlights - APPROVED
+- Deployment: Must work with simple GitHub push (no build) - APPROVED
+- Homepage Structure: Hero → About → Programs → Updates → Board → Highlights → Connect - APPROVED
+- Primary Goal: Promote MSB activities to MICCAI community - CONFIRMED
+- Target Users: MICCAI members learning about MSB - CONFIRMED
+- Updates System: JSON data file rendered by JavaScript - APPROVED
+- Highlights: Mixed content (metrics, features, media, testimonials) - APPROVED
+
+=== NOTES ===
+
+- Keep site minimal and professional (no excessive animations or clutter)
+- No emojis in code, comments, or commit messages
+- No identifying comments or attributions about who worked on the repo
+- All changes require explicit approval before implementation
+- Maintain backwards compatibility with existing URLs where possible
+- Preserve existing content (materials, member info) during redesign
+- Existing .claude/ directory contains Claude Code settings (not project docs)
+- This file (.claude-project) contains all project documentation
+- Brain logo has nostalgic/brand value for MEC, preserve on that page
+- FullCalendar on events page should remain functional
+- Facebook SDK and social media integration should be preserved
+
+=== QUESTIONS FOR FUTURE PHASES ===
+
+Phase 2 (Rebranding):
+- Do we have official MSB logo files to replace placeholder?
+- Are there MICCAI brand guidelines (colors, fonts) we should follow?
+- Should favicon be updated to MSB logo?
+
+Phase 3 (Visual Redesign):
+- Specific blue shades for color palette?
+- Any specific card designs or reference sites to emulate?
+- Icon set preference for program cards?
+- What metrics should be displayed in Highlights section?
+
+Phase 4 (Polish):
+- Analytics or tracking requirements beyond Facebook?
+- Newsletter signup integration (Mailchimp, etc.)?
+- Search functionality needed for materials library?

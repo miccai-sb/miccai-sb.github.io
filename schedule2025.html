@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MSB Events at MICCAI 2025 - Workshops, networking, and student activities at the conference.">
+  <title>2025 Schedule - MICCAI Student Board</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link href="style/cards.css" rel="stylesheet" type="text/css">
+  <link href="style/layout.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <!-- FullCalendar -->
+  <link href="https://unpkg.com/fullcalendar@6.1.9/index.global.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/fullcalendar@6.1.9/index.global.min.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/nav-dropdown.js"></script>
+</head>
+
+<body>
+
+<div id="titlebar-container">
+  <div id="titlebar-container-logo">
+    <div class="logo-title">MICCAI Student Board</div>
+  </div>
+  <nav id="titlebar-container-menu">
+    <a href="index.html">Home</a>
+    <span class="nav-disabled">About MSB</span>
+    <a href="apply.html">Join MSB</a>
+    <a href="materials.html">MEC Library</a>
+    <a href="schedule2025.html" class="active">2025 Schedule</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle">Events</button>
+      <div class="nav-dropdown-menu">
+        <a href="challenge.html">Educational Challenge</a>
+        <a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a>
+        <a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a>
+      </div>
+    </div>
+    <a href="organization.html">Our Team</a>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-icon"><i class="fa fa-moon-o"></i></span>
+  </button>
+</div>
+
+<div id="main-content-container">
+<div id="page-content-container">
+<div id="page-content">
+
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-image">
+      <img src="./img/2025msb/events_banner.png" alt="MSB Events at MICCAI 2025" />
+    </div>
+    <div class="hero-text">
+      <h1>MICCAI 2025 Schedule</h1>
+      <p style="margin-bottom: var(--space-lg); color: var(--color-text);">Join us for an exciting week of workshops, networking, and cultural experiences at MICCAI 2025 in Daejeon, South Korea.</p>
+
+      <div style="margin-bottom: var(--space-lg);">
+        <p style="font-size: var(--font-size-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">Quick Navigation</p>
+        <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+          <a href="#calendar" style="display: inline-flex; align-items: center; padding: var(--space-xs) var(--space-md); background: var(--color-bg-elevated); border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); color: var(--color-text); font-weight: 500; text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.background='var(--color-primary)'; this.style.borderColor='var(--color-primary)'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text)';">Calendar</a>
+          <a href="#explore-daejeon" style="display: inline-flex; align-items: center; padding: var(--space-xs) var(--space-md); background: var(--color-bg-elevated); border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); color: var(--color-text); font-weight: 500; text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.background='var(--color-primary)'; this.style.borderColor='var(--color-primary)'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text)';">Explore Daejeon</a>
+          <a href="#events" style="display: inline-flex; align-items: center; padding: var(--space-xs) var(--space-md); background: var(--color-bg-elevated); border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--font-size-sm); color: var(--color-text); font-weight: 500; text-decoration: none; transition: all var(--transition-fast);" onmouseover="this.style.background='var(--color-primary)'; this.style.borderColor='var(--color-primary)'; this.style.color='white';" onmouseout="this.style.background='var(--color-bg-elevated)'; this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text)';">All Events</a>
+        </div>
+      </div>
+
+      <div id="explore-daejeon" style="background: linear-gradient(135deg, rgba(180, 167, 214, 0.15), rgba(168, 216, 234, 0.15)); padding: var(--space-lg); border-radius: var(--radius-md); border: 2px solid var(--color-primary);">
+        <h3 style="margin: 0 0 var(--space-sm); color: var(--color-primary); display: flex; align-items: center; gap: var(--space-sm);"><i class="fa fa-map-marker" style="color: #9B2929;"></i> Explore Daejeon!</h3>
+        <p style="margin: 0 0 var(--space-sm); font-weight: 600; color: #9B2929; font-size: var(--font-size-sm);">Soccer Game - Sept 26th | Evening Tour - Sept 27th | Full Day Tour - Sept 28th</p>
+        <p style="margin: 0; font-size: var(--font-size-sm); color: var(--color-text);"><strong style="color: purple;">Registration Required - Limited Seats Available.</strong> Scroll down for details!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="page-layout">
+  <div class="page-layout__main">
+
+    <section id="events" style="margin-bottom: var(--space-xxxl);">
+      <h2 style="margin: 0 0 var(--space-xl); padding-bottom: var(--space-sm); border-bottom: 1px solid var(--color-border); color: var(--color-text); font-size: var(--font-size-lg);">Event Details</h2>
+
+      <!-- EMERGE Workshop -->
+      <div style="margin-bottom: var(--space-xl); padding-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border);">
+        <div style="display: flex; gap: var(--space-xl); align-items: start; flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="./img/2024msb/emerge.png" alt="MSB EMERGE" style="width: 200px; height: 200px; border-radius: var(--radius-md); object-fit: cover;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0 0 var(--space-xs);">September 23rd, 2025 (Tuesday)</p>
+            <h2 style="margin: 0 0 var(--space-md); color: #8A6240; font-size: var(--font-size-lg);">Second MSB EMERGE Workshop</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">The MSB EMERGE workshop is a half-day workshop <strong style="color: #29AB87;">fully organized by students and designed for students</strong> to present their research and support them in their journey to become independent investigators and mentors. We encourage early-career researchers - maximum two years post Ph.D. - to be primary investigators and occupy the first and/or last author positions.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">Another unique feature of our workshop is the dedicated panel of experts who will engage in discussion with the presenters to provide constructive feedback on extending their work to a journal submission. We publish the accepted papers in <strong style="color: #29AB87;">Springer LNCS workshop proceedings</strong> and provide an <strong style="color: #29AB87;">invitation to submit as full extended papers in MELBA journal</strong>.</p>
+            <a href="https://miccaimsb.github.io/emerge/" target="_blank" style="display: inline-block; margin-top: var(--space-sm); color: var(--color-primary); font-weight: 600;">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctoral Consortium -->
+      <div style="margin-bottom: var(--space-xl); padding-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border);">
+        <div style="display: flex; gap: var(--space-xl); align-items: start; flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="https://miccaimsb.github.io/msb-doctoral25/images/miccai-logo.png" alt="Doctoral Consortium" style="width: 200px; height: 200px; border-radius: var(--radius-md); object-fit: cover;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0 0 var(--space-xs);">September 24th/25th/26th, 2025 (Wednesday, Thursday & Friday)</p>
+            <h2 style="margin: 0 0 var(--space-md); color: #8A6240; font-size: var(--font-size-lg);">Doctoral Consortium (Poster Presentation)</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">Posters from Doctoral Consortium participants—highlighting the core ideas of their doctoral research—will be on display throughout the main conference. These posters offer a unique opportunity for attendees to engage in thoughtful discussions with emerging researchers.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">The submissions will be featured in the <strong style="color: #0041C2;">MICCAI Emerging Scholars Collection</strong>, which will be hosted on the MSB website and the MICCAI Society platform.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Morning Runs -->
+      <div style="margin-bottom: var(--space-xl); padding-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border);">
+        <div style="display: flex; gap: var(--space-xl); align-items: start; flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="./img/2025msb/running.png" alt="Morning Runs" style="width: 200px; height: 200px; border-radius: var(--radius-md); object-fit: cover;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0 0 var(--space-xs);">September 24th/25th, 2025 (Wednesday & Thursday)</p>
+            <h2 style="margin: 0 0 var(--space-md); color: #8A6240; font-size: var(--font-size-lg);">Morning Runs</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">Kickstart your day with a breathtaking sunrise run along Daejeon's scenic riverside. It's a wonderful opportunity to connect with fellow MICCAI attendees, invigorate your spirit, and set the pace for the day. Lace up your running shoes, bring your smiles, register, and join us in welcoming the new day! All fitness levels are welcome.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);"><strong style="color: #29AB87;">This year we will offer free t-shirts for the first 50 participants on Wednesday morning.</strong> Registration to obtain a t-shirt is required.</p>
+            <a href="https://forms.gle/ewfoBETDPM6diP5R9" target="_blank" style="display: inline-block; margin-top: var(--space-sm); padding: var(--space-sm) var(--space-lg); background: var(--color-primary); color: white; border-radius: var(--radius-md); text-decoration: none; font-weight: 500; font-size: var(--font-size-sm);">Register Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Academia & Industry Panel -->
+      <div style="margin-bottom: var(--space-xl); padding-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border);">
+        <div style="display: flex; gap: var(--space-xl); align-items: start; flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="./img/2023msb/anadi.jpeg" alt="Academia and Industry Panel" style="width: 200px; height: 200px; border-radius: var(--radius-md); object-fit: cover;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0 0 var(--space-xs);">September 24th, 2025 (Wednesday @ Evening)</p>
+            <h2 style="margin: 0 0 var(--space-md); color: #8A6240; font-size: var(--font-size-lg);">Academia and Industry Panel and Networking Event</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">The MSB has a goal to provide opportunities for professional development and networking. The A&I event educates current students on career possibilities post graduation, and provides students a venue to ask questions related to professional development.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);"><strong style="color: #0041C2;">The A&I event will begin at 6 PM on the first day of the main conference</strong> with a one-hour moderated panel discussion on career development and the differences between academic and corporate research. Panelists are selected to represent a diverse set of backgrounds, perspectives and experiences. The second hour of the A&I event will feature a <strong style="color: #0041C2;">networking session structured in a speed-dating style</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MSB Lunch -->
+      <div style="margin-bottom: var(--space-xl); padding-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border);">
+        <div style="display: flex; gap: var(--space-xl); align-items: start; flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="./img/2024msb/thesismadness.png" alt="MSB Lunch and Educational Challenge" style="width: 200px; height: 200px; border-radius: var(--radius-md); object-fit: cover;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0 0 var(--space-xs);">September 25th, 2025 (Thursday @ Lunch)</p>
+            <h2 style="margin: 0 0 var(--space-md); color: #8A6240; font-size: var(--font-size-lg);">MSB Lunch, MICCAI Educational Challenge and PhD Thesis Madness</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">Videos of the top-6 submissions to the <strong>MICCAI Educational Challenge</strong> will be shown during the MSB Lunch event. The MICCAI Educational Challenge is a competition that aims to promote the development of educational resources in the field of medical imaging and computer-assisted interventions.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">The best <strong>doctoral consortium</strong> submissions will be invited to present their work in a 3-minute oral presentation during the MSB Lunch event. The Thesis Madness event allows final-year Ph.D. students and freshly finished doctorates to showcase their groundbreaking work in a short framework. The event will take place during the lunch and will offer the opportunity for upcoming researchers to connect, collaborate, and construct new ideas.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);"><strong style="color: #0041C2;">Lunch will be served at the venue.</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soccer Game -->
+      <div style="margin-bottom: var(--space-xl); padding-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border);">
+        <div style="display: flex; gap: var(--space-xl); align-items: start; flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="./img/2023msb/soccer.jpeg" alt="MICCAI Soccer Game" style="width: 200px; height: 200px; border-radius: var(--radius-md); object-fit: cover;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0 0 var(--space-xs);">September 26th, 2025 (Friday @ Evening)</p>
+            <h2 style="margin: 0 0 var(--space-md); color: #8A6240; font-size: var(--font-size-lg);">MICCAI Soccer Game</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">The traditional MICCAI soccer game will return this year! It will take place on two courts for 5-vs-5. The game will be hosted at 6:30 P.M. on September 26th evening. <strong style="color: #0041C2;">Participants will be guided from the conference center to the nearby court.</strong></p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text); margin-top: var(--space-md);"><strong style="color: purple;">LIMITED SEATS, REGISTRATION REQUIRED.</strong> <span style="color: #000080;">Now OPEN on the main conference registration portal.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evening Tour -->
+      <div style="margin-bottom: var(--space-xl); padding-bottom: var(--space-xl); border-bottom: 1px solid var(--color-border);">
+        <div style="display: flex; gap: var(--space-xl); align-items: start; flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="./img/2025msb/foodtour.jpg" alt="Evening Tour" style="width: 200px; height: 200px; border-radius: var(--radius-md); object-fit: cover;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0 0 var(--space-xs);">September 27th, 2025 (Saturday @ Evening)</p>
+            <h2 style="margin: 0 0 var(--space-md); color: #8A6240; font-size: var(--font-size-lg);">Evening Tour: Taste & Traditions - An Evening of Korean Flavors</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">Start with food tastings at a traditional <strong style="color: #29AB87;">Korean market</strong>, including popular street snacks. Try your hand at nostalgic <strong style="color: #29AB87;">Korean games</strong> like Dalgona and Ddakji (some made popular by Squid Game). Then enjoy a relaxed dinner with local <strong style="color: #29AB87;">Korean dishes</strong>, followed by a stroll down <strong style="color: #29AB87;">Sky Road</strong>, a well-known pedestrian street with lights, performances, and shops. Wrap up the evening with some café-hopping in the area.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">Includes dinner, a small gift from the famous Sung Sim Dang Bakery, transportation, and travel insurance. <strong style="color: #0041C2;">Participants will be transported to and from the event.</strong></p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text); margin-top: var(--space-md);"><strong style="color: purple;">LIMITED SEATS, REGISTRATION REQUIRED.</strong> <span style="color: #000080;">Now OPEN on the main conference registration portal.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-Day Tour -->
+      <div style="margin-bottom: var(--space-xl);">
+        <div style="display: flex; gap: var(--space-xl); align-items: start; flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="./img/2025msb/fulldaytour.png" alt="Full-Day Tour" style="width: 200px; height: 200px; border-radius: var(--radius-md); object-fit: cover;" />
+          </div>
+          <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0 0 var(--space-xs);">September 28th, 2025 (Sunday)</p>
+            <h2 style="margin: 0 0 var(--space-md); color: #8A6240; font-size: var(--font-size-lg);">Full-Day Guided Tour: Discover Daejeon's Science & Heritage</h2>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">Explore Daejeon through a full-day guided tour covering science, history, and scenic views. Stops include the <strong style="color: #29AB87;">National Science Museum, Dongchundan Historical Park, Uam Historical Park, and Daedong Sky Park</strong> with an English-speaking guide. Enjoy hands-on exhibits, stories of Korea's scholarly past, and sweeping city views.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text);">The tour includes a <strong style="color: #29AB87;">traditional kalguksu lunch, morning snacks, a cultural gift, transportation, and travel insurance</strong>. <strong style="color: #0041C2;">Participants will be transported to and from the event.</strong></p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text); margin-top: var(--space-md);"><strong style="color: purple;">LIMITED SEATS, REGISTRATION REQUIRED.</strong> <span style="color: #000080;">Now OPEN on the main conference registration portal.</span></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="page-layout__sidebar">
+    <h2 id="calendar" style="margin: 0 0 var(--space-lg); padding-bottom: var(--space-sm); border-bottom: 1px solid var(--color-border); color: var(--color-text); font-size: var(--font-size-lg);">Events Calendar</h2>
+    <div style="position: sticky; top: var(--space-lg);">
+      <div id="calendar-widget" style="font-size: var(--font-size-xs);"></div>
+      <button id="download-calendar-btn" style="width: 100%; margin-top: var(--space-md); padding: var(--space-sm); background: var(--color-primary); color: white; border: none; border-radius: var(--radius-md); font-size: var(--font-size-xs); font-weight: 600; cursor: pointer; transition: all var(--transition-fast);" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+        <i class="fa fa-download"></i> Download All Events (.ics)
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Code of Conduct -->
+<div style="padding: var(--space-lg) var(--space-xxxl); margin-top: var(--space-xl); border-top: 1px solid var(--color-border);">
+  <p style="margin: 0; color: var(--color-text); font-size: var(--font-size-sm); line-height: 1.6;"><i class="fa fa-info-circle" style="color: var(--color-primary); margin-right: var(--space-sm);"></i>The MICCAI Society is committed to ensuring a safe and welcoming experience for all who attend MICCAI Society events. Read the <a href="https://conferences.miccai.org/2025/en/CODE-OF-CONDUCT.html" target="_blank" style="color: var(--color-primary); font-weight: 600;">Code of Conduct policy</a> to learn what's expected. As a participant of a MICCAI event, you agree to abide by this Code of Conduct.</p>
+</div>
+
+<!-- Scroll buttons -->
+<div id="scroll-to-top" style="position: fixed; bottom: 80px; right: 20px; width: 40px; height: 40px; background: var(--color-primary); color: white; border-radius: 50%; display: none; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 1000; transition: all var(--transition-fast);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+  <i class="fa fa-chevron-up"></i>
+</div>
+<div id="scroll-to-bottom" style="position: fixed; bottom: 30px; right: 20px; width: 40px; height: 40px; background: var(--color-primary); color: white; border-radius: 50%; display: none; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 1000; transition: all var(--transition-fast);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+  <i class="fa fa-chevron-down"></i>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>MICCAI Student Board</h3>
+      <p>Supporting students and early-career researchers in medical image computing and computer-assisted interventions.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/miccaistudentboard/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@miccaieducationalinitiative" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://twitter.com/miccaistudents" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://benjamindkilleen.com/msb" target="_blank" rel="noopener noreferrer" aria-label="Slack"><i class="fa fa-slack"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Programs</h3>
+      <ul>
+        <li><a href="challenge.html">Educational Challenge</a></li>
+        <li><a href="materials.html">MEC Library</a></li>
+        <li><a href="https://miccaimsb.github.io/emerge/index.html" target="_blank">EMERGE</a></li>
+        <li><a href="https://miccaimsb.github.io/msb-doctoral25/" target="_blank">Doctoral Consortium</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Get Involved</h3>
+      <ul>
+        <li><a href="apply.html">Join MSB</a></li>
+        <li><a href="schedule2025.html">2025 Schedule</a></li>
+        <li><a href="organization.html">Our Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:miccai-student-board@csail.mit.edu">Email Us</a></li>
+        <li><a href="https://miccai.org" target="_blank">MICCAI Society</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="current-year">2025</span> MICCAI Student Board. All rights reserved.</p>
+  </div>
+</div>
+
+<script>
+// Set current year in footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// FullCalendar initialization
+document.addEventListener('DOMContentLoaded', function () {
+  var calendarEl = document.getElementById('calendar-widget');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'listWeek',
+    headerToolbar: {
+      left: '',
+      center: '',
+      right: ''
+    },
+    height: 'auto',
+    firstDay: 1,
+    initialDate: '2025-09-23',
+    validRange: {
+      start: '2025-09-22',
+      end: '2025-09-29'
+    },
+    timeZone: 'Asia/Seoul',
+    events: [
+      {
+        title: 'MSB EMERGE Workshop',
+        start: '2025-09-23T08:00:00',
+        end: '2025-09-23T12:30:00'
+      },
+      {
+        title: 'Morning Run',
+        start: '2025-09-24T06:20:00',
+        end: '2025-09-24T07:20:00'
+      },
+      {
+        title: 'Doctoral Consortium',
+        start: '2025-09-24T15:30:00',
+        end: '2025-09-24T17:00:00'
+      },
+      {
+        title: 'Academia & Industry Panel',
+        start: '2025-09-24T18:30:00',
+        end: '2025-09-24T20:30:00'
+      },
+      {
+        title: 'Morning Run',
+        start: '2025-09-25T06:50:00',
+        end: '2025-09-25T07:50:00'
+      },
+      {
+        title: 'MSB Lunch + Challenge + Thesis Madness',
+        start: '2025-09-25T12:30:00',
+        end: '2025-09-25T13:30:00'
+      },
+      {
+        title: 'MICCAI Soccer Game',
+        start: '2025-09-26T18:30:00',
+        end: '2025-09-26T21:00:00'
+      },
+      {
+        title: 'Evening Tour: Taste & Traditions',
+        start: '2025-09-27T18:30:00',
+        end: '2025-09-27T21:00:00'
+      },
+      {
+        title: 'Full-Day Guided Tour',
+        start: '2025-09-28T09:00:00',
+        end: '2025-09-28T18:30:00'
+      }
+    ]
+  });
+
+  calendar.render();
+
+  // Download all events button
+  document.getElementById('download-calendar-btn').addEventListener('click', function() {
+    function formatDate(date) {
+      return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+    }
+
+    const events = calendar.getEvents();
+    let icsContent = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//MICCAI Student Board//Events Calendar//EN\n";
+
+    events.forEach(function(event) {
+      let start = formatDate(event.start);
+      let end = formatDate(event.end);
+
+      icsContent +=
+        "BEGIN:VEVENT\n" +
+        "SUMMARY:" + event.title + "\n" +
+        "DTSTART:" + start + "\n" +
+        "DTEND:" + end + "\n" +
+        "DESCRIPTION:MICCAI 2025 Event\n" +
+        "LOCATION:Daejeon, South Korea\n" +
+        "END:VEVENT\n";
+    });
+
+    icsContent += "END:VCALENDAR";
+
+    let blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    let url = URL.createObjectURL(blob);
+    let a = document.createElement('a');
+    a.href = url;
+    a.download = "MICCAI_2025_MSB_Events.ics";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+});
+
+// Scroll buttons functionality
+window.addEventListener('scroll', function() {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight;
+  const clientHeight = document.documentElement.clientHeight;
+
+  const scrollToTopBtn = document.getElementById('scroll-to-top');
+  const scrollToBottomBtn = document.getElementById('scroll-to-bottom');
+
+  // Show scroll-to-top button when scrolled down
+  if (scrollTop > 300) {
+    scrollToTopBtn.style.display = 'flex';
+  } else {
+    scrollToTopBtn.style.display = 'none';
+  }
+
+  // Show scroll-to-bottom button when not at bottom
+  if (scrollTop + clientHeight < scrollHeight - 100) {
+    scrollToBottomBtn.style.display = 'flex';
+  } else {
+    scrollToBottomBtn.style.display = 'none';
+  }
+});
+
+document.getElementById('scroll-to-top').addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+document.getElementById('scroll-to-bottom').addEventListener('click', function() {
+  window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+});
+</script>
+
+</body>
+
+</html>
