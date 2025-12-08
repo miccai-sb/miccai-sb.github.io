@@ -1,0 +1,52 @@
+.randomordercontent {
+	padding: 5px;
+	margin: 5px;
+	width: 204px;
+	border: 1px solid #DDD;
+	height: 220px;
+	max-height: 220px;
+	/*overflow: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;*/
+	font:10px "Merriweather Sans","Roboto",Helvetica,Helvetica Neue,Arial;
+	background-color: #F0F0F0;
+	vertical-align: top
+}
+
+
+		
+.jsclass body .randomordercontent {
+	/*display: none;*/
+	display: inline-block;
+}
+ 
+.content_item_full { 
+  width: 940px;
+}
+
+/*
+.randomordercontent iframe {
+	padding: 5px;
+}
+
+.rotate {
+  width:150px;
+  margin-left:20px;
+  margin-top:0px;
+  color:#000;
+
+  font: 36px 'Love Ya Like A Sister',Helvetica,Helvetica Neue,Arial;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+*/
+
+a.alink {
+  position: relative;
+  top:-100px;
+  display: block;
+  height: 0;
+  width:0;
+}
