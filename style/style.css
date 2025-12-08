@@ -57,7 +57,7 @@
   --font-size-xxl: 36px;
   --font-size-xxxl: 52px;
 
-  --header-height: 72px;
+  --header-height: 80px;
 }
 
 [data-theme="dark"] {
@@ -241,9 +241,9 @@ p {
 
 #titlebar-container-logo {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2px;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-md);
   flex-shrink: 0;
 }
 
