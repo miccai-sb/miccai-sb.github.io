@@ -46,8 +46,7 @@
 
 
 
-<div id="brain-logo">
-</div>
+
 
 
 
@@ -76,52 +75,51 @@
 
   <p>With the MICCAI Educational Challenge we are building a library of tutorials relevant to the MICCAI community, created by and for its members. Establishing a comprehensive collection will make the field more accessible and shorten the startup time for new students. The MEC will be repeated at future MICCAI conferences, building a large corpus of educational resources for the community.</P>
     
-  <h2>From Pixels to Patients - Bridging Research and Real-World Impact</h2>
-  <p>Medical imaging research has never been more powerful - yet the path from a promising algorithm to real clinical impact remains poorly understood and rarely taught.
-    The MICCAI Educational Challenge 2026 invites participants to bridge that gap.
-    We are looking for tutorials that go beyond methods and metrics, and instead <b>illuminate the full journey from raw imaging data to meaningful patient outcomes</b>. Whether you focus on technical deployment, clinical collaboration, or responsible AI, we want to see how your work connects to the world outside the lab.</p>
+  <h2>Why this challenge looks different in 2026</h2>
+  <p>For most of the MEC's history, the goal was to help newcomers in the field to learn the basics because good explanations were scarce, and a well-written tutorial filled a real need.</p>
 
- <h2>Suggested Topics for Submission</h2>
- <p>We welcome tutorial submissions on any topic within medical image computing and computer-assisted interventions that speak to the theme.
-  Suggested topics include, <b>but are not limited to</b>:
-  <h4>Translational & Clinical Foundations</h4>
+  <p>That isn't largely true anymore. <b>A student today can ask an AI assistant to explain U-Net or walk through a transformer architecture and get a reasonable answer in seconds</b>. Static introductions and survey-style tutorials, by and large, don't add much that a chatbot can't provide on demand. So we're shifting what we're asking for.</p>
+
+  <p>What we want now are tutorials that <b>teach things an AI assistant can't easily reproduce</b>. First-hand experiences from real projects, code that actually runs on medical data, the perspective of a clinician who has actually used these tools, honest accounts of what was hard, what broke, and what took weeks to figure out. We'd like to see more of that surfaced through this challenge.</p>
+    
+
+  <h2>What we are looking for</h2>
+  <p>
+Strong submissions will do at least one of the following:
   <ul>
-    <li>End-to-end pipelines: from data curation to deployment</li>
-    <li>Regulatory considerations for clinical AI (FDA, CE marking)</li>
-    <li>Framing research around real clinical needs</li>
+    <li>Share first-hand experience from a real project, deployment, or collaboration</li>
+    <li>Reproduce, benchmark, or critically evaluate existing work, including honest accounts of where methods did not transfer or generalize as expected</li>
+    <li>Provide verified, runnable code on real medical data with pinned dependencies and a clean environment</li>
+    <li>Bring in a clinician, surgeon, or other domain expert as a named contributor whose perspectives shape the material</li>
+    <li>Walk through a specific artifact end to end, including a dataset, a deployment, a workflow, and a regulatory package</li>
+    <li>Teach a topic where good learning resources are genuinely scarce (niche modalities, emerging methods that have not yet hit the mainstream, or areas where the existing material is outdated, paywalled, or scattered)</li>
   </ul>
-  <h4>Robust & Trustworthy AI</h4>
-  <ul>
-    <li>Domain shift and generalisation across sites and scanners</li>
-    <li>Uncertainty quantification and model calibration</li>
-    <li>Explainability, fairness, and bias in imaging AI</li>
-  </ul>
-  <h4>Data Challenges in Practice</h4>
-  <ul>
-    <li>Federated learning and privacy-preserving methods</li>
-    <li>Learning from limited or noisy clinical annotations</li>
-    <li>Responsible data sharing and dataset documentation</li>
-  </ul>
-  <h4>Emerging Methods with Clinical Relevance</h4>
-  <ul>
-    <li>Foundation and vision-language models in medical imaging</li>
-    <li>Self-supervised learning for label-scarce settings</li>
-    <li>Multi-modal AI combining imaging with clinical data</li>
-  </ul>
-  <h4>Computer-Assisted Interventions</h4>
-  <ul>
-    <li>Real-time AI for surgical guidance and intraoperative imaging</li>
-    <li>Human-in-the-loop workflows and AI-assisted annotation</li>
-    <li>Integrating AI tools into clinical and surgical workflows</li>
-  </ul>
-  <h4>Reproducibility & Open Science</h4>
-  <ul>
-    <li>Reproduce, re-implement, or provide practical walkthroughs of key papers</li>
-    <li>Best practices for open-source code release and documentation</li>
-    <li>Reproducing and benchmarking existing methods across datasets and domains</li>
-  </ul>
+
+We are less interested in general overviews of established research areas. Those are now easy to obtain elsewhere. 
+
 </p>
 
+ <h2>Suggested Topics for Submission</h2>
+ <p>Anything within medical image computing or computer-assisted interventions is welcome. To give a sense of the kinds of tutorials we hope to see:
+  <ul>
+    <li>Deploying an imaging model into a real clinical environment, and what that actually involves.</li>
+    <li>Reproducing a method as a learning exercise. Walking through the implementation, the choices that had to be made, and the parts of the original paper that required interpretation.</li>
+    <li>Working with foundation models or vision-language models on medical data, including fine-tuning, prompting, evaluation, and where the standard recipes break.</li>
+    <li>Annotation workflows that pair AI tools with clinicians, including inter-rater agreement and failure modes.</li>
+    <li>Federated learning across sites, with a focus on the data harmonization work that papers usually omit.</li>
+    <li>Calibration, uncertainty, and bias for modern models in clinical settings.</li>
+    <li>Regulatory pathways for imaging AI: FDA submissions, EU AI Act high-risk requirements, and predetermined change control plans.</li>
+    <li>Reproducibility infrastructure: environments, data versioning, seeds, and the unglamorous work that makes a result hold up.</li>
+    <li>Using AI assistants well as a researcher. For example, a guided workflow for reading and understanding a MICCAI paper as a new student.</li>
+    <li>AI in the operating room, including surgical videos, intraoperative guidance, or autonomous systems.</li>
+  </ul>
+  This list is illustrative, not exhaustive. If your tutorial fits the spirit of the call, please submit it.
+</p>
+
+  <h2>Guidelines on AI assistance</h2>
+  <p>
+    <b>You may use AI tools to help draft, edit, or generate parts of your tutorial</b>. We do ask you to disclose the tools you used and how you used them. Also, please make sure the substantive value of the tutorial (including the experience, the code that runs, the judgment calls, the clinical perspectives, the personal reflections) originates from you. Submissions that are essentially LLM output presented as a tutorial will not be competitive, because they offer learners nothing they could not get on their own.
+  </p>
 
   <h2>Frequently Asked Questions (FAQ)</h2>
   <ul>
@@ -146,7 +144,7 @@
     <li>Interactive Demos and Websites</li>Interactive Demos and Websites
   </ul>
 
-  <p style="font-weight: bold">Participants are encouraged to consider preparing any blog-style submissions as a post through Medium, which will be published directly through the newly created MICCAI Educational Initiative publication on Medium. We’ve published a <a href="https://medium.com/miccai-educational-initiative/introducing-the-miccai-educational-initiative-on-medium-faa37c98d44f">getting started article</a> on the Medium channel to help you begin.</p>
+  <p style="font-weight: bold">Participants are encouraged to consider preparing any blog-style submissions as a post through Medium, which will be published directly through the newly created MICCAI Educational Initiative publication on Medium. We've published a <a href="https://medium.com/miccai-educational-initiative/introducing-the-miccai-educational-initiative-on-medium-faa37c98d44f">getting started article</a> on the Medium channel to help you begin.</p>
 
   <p>Submitted tutorials do not have to be especially long (even a few well thought out slides / pages can be incredibly helpful to beginners). Perhaps you have made something for a lab meeting or blog that would be interesting for the entire community?</p>
 
@@ -240,7 +238,7 @@
     <li>GitHub Source Code and Documentation</li>
   </ul>
 
-  <p style="font-weight: bold">Participants are encouraged to consider preparing any blog-style submissions as a post through Medium, which will be published directly through the newly created MICCAI Educational Initiative publication on Medium. We’ve published a <a href="https://medium.com/miccai-educational-initiative/introducing-the-miccai-educational-initiative-on-medium-faa37c98d44f">getting started article</a> on the Medium channel to help you begin.</p>
+  <p style="font-weight: bold">Participants are encouraged to consider preparing any blog-style submissions as a post through Medium, which will be published directly through the newly created MICCAI Educational Initiative publication on Medium. We've published a <a href="https://medium.com/miccai-educational-initiative/introducing-the-miccai-educational-initiative-on-medium-faa37c98d44f">getting started article</a> on the Medium channel to help you begin.</p>
 
   <p>Submitted tutorials do not have to be especially long (even a few well thought out slides / pages can be incredibly helpful to beginners). Perhaps you have made something for a lab meeting or blog that would be interesting for the entire community?</p>
 
