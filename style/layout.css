@@ -179,3 +179,83 @@
   line-height: 1.5;
   margin: 0;
 }
+
+/* ========================================
+   Mobile & Responsive Layout Fixes
+   ======================================== */
+
+/* 1. Prevent Horizontally Overflowing Containers */
+#main-content-container {
+  padding-left: var(--space-md) !important;
+  padding-right: var(--space-md) !important;
+  box-sizing: border-box;
+}
+
+/* 2. Responsive Main Layout (Grid to Stack Transition) */
+@media (max-width: 1024px) {
+  #titlebar-container {
+    height: auto !important;
+    padding: var(--space-md) var(--space-lg) !important;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+
+  #titlebar-container-menu {
+    width: 100%;
+    margin: var(--space-xs) 0 0 0 !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-lg) !important;
+    padding: 0 !important;
+  }
+
+  .page-layout {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-xl) !important;
+  }
+}
+
+/* 3. Small Screen Adjustments (Mobile Phones) */
+@media (max-width: 768px) {
+  #titlebar-container {
+    padding: var(--space-sm) var(--space-md) !important;
+  }
+
+  #titlebar-container-logo img {
+    height: 40px !important;
+  }
+
+  #titlebar-container-menu a,
+  .nav-dropdown-toggle,
+  .nav-disabled {
+    padding: var(--space-xs) var(--space-sm) !important;
+    font-size: var(--font-size-xs) !important;
+  }
+
+  .hero-text h1 {
+    font-size: var(--font-size-xl) !important;
+  }
+
+  /* Prevent Tables from breaking screen width */
+  .card table,
+  .sidebar-section table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Make form inputs and buttons comfortably full width on mobile */
+  form input, 
+  form select, 
+  form textarea, 
+  form button[type="submit"] {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
