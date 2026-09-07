@@ -1,7 +1,193 @@
 {
   "version": "1.0",
-  "lastUpdated": "2025-12-06T19:48:37.102697",
+  "lastUpdated": "2026-09-07T00:00:00Z",
   "tutorials": [
+    {
+      "year": 2026,
+      "title": "When Explanations Lie: Stress-Testing Saliency Maps Before Clinical Deployment",
+      "authors": [
+        "Tristan Kirscher"
+      ],
+      "url": "https://github.com/Kirscher/when-explanations-lie",
+      "thumbnail": "https://github.com/Kirscher/when-explanations-lie/raw/main/assets/teaser_figure.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-001"
+    },
+    {
+      "year": 2026,
+      "title": "Critical Technical Practice for Responsible Medical Image Analysis",
+      "authors": [
+        "Weina Jin"
+      ],
+      "url": "https://critical-technical-practice.github.io/method/ctp_mia/",
+      "thumbnail": "https://critical-technical-practice.github.io/assets/images/tree.jpg",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-002"
+    },
+    {
+      "year": 2026,
+      "title": "From Pixels to Patients: a hands-on reliability audit of a medical-image classifier",
+      "authors": [
+        "Chao Sheng"
+      ],
+      "url": "https://openreview.net/forum?id=GVgv4jT31K",
+      "thumbnail": "img/thumbs_2026mec/id003.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-003"
+    },
+    {
+      "year": 2026,
+      "title": "From Paper to Interactive Website Using AI",
+      "authors": [
+        "Omar Choudhry"
+      ],
+      "url": "https://interactivepaper.omarchoudhry.co.uk",
+      "thumbnail": "img/thumbs_2026mec/id004.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-004"
+    },
+    {
+      "year": 2026,
+      "title": "Your GPU Is Lying To You",
+      "authors": [
+        "Geofray Paul J"
+      ],
+      "url": "https://openreview.net/forum?id=68qQDKMuwi",
+      "thumbnail": "img/thumbs_2026mec/id005.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-005"
+    },
+    {
+      "year": 2026,
+      "title": "Attention Modules: A note on applying them to deep learning models for spectrograms",
+      "authors": [
+        "Rocío Damonte Aparicio"
+      ],
+      "url": "https://colab.research.google.com/drive/1gJ-iplyTYNf5qRgvQ-bcFLHahrvNP46a?authuser=1",
+      "thumbnail": "img/thumbs_2026mec/id006.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-006"
+    },
+    {
+      "year": 2026,
+      "title": "Would you trust a medical image segmentation model because it reached a Dice score of 0.90?",
+      "authors": [
+        "Joselyn Romero Avila"
+      ],
+      "url": "https://openreview.net/forum?id=nCOyJMHQ2i",
+      "thumbnail": "img/thumbs_2026mec/id007.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-007"
+    },
+    {
+      "year": 2026,
+      "title": "From Pixels to Patients: A Guided Tour of Attribution Methods on Lung CT",
+      "authors": [
+        "Baidu Li",
+        "Meng Wei",
+        "Jun Ma"
+      ],
+      "url": "https://bardli.github.io/pixels-to-patients/",
+      "thumbnail": "img/thumbs_2026mec/id008.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-008"
+    },
+    {
+      "year": 2026,
+      "title": "A Hands-On Tutorial on Uncertainty Quantification for Medical Image Segmentation and Radiotherapy Endpoints",
+      "authors": [
+        "Hamza Hanif"
+      ],
+      "url": "https://openreview.net/forum?id=OnimGhH3DQ",
+      "thumbnail": "img/thumbs_2026mec/id009.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-009"
+    },
+    {
+      "year": 2026,
+      "title": "Many Raters, One Mask? A Practical Guide to Consensus Aggregation for Multi-Annotator Medical Image Segmentation",
+      "authors": [
+        "Kumar Abhishek"
+      ],
+      "url": "https://pixels-and-predictions.pages.dev/posts/consensus-aggregation/",
+      "thumbnail": "https://pixels-and-predictions.pages.dev/images/posts_images/consensus-aggregation/mv_isolated_voxels.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-010"
+    },
+    {
+      "year": 2026,
+      "title": "Learning nnsyn: A Self-Configuring Framework for 3D Medical Image Translation",
+      "authors": [
+        "Zaiyou He",
+        "Jun Ma"
+      ],
+      "url": "https://zaiyouzy.github.io/nnsyn-mini-course/",
+      "thumbnail": "https://zaiyouzy.github.io/nnsyn-mini-course/figures/fig01_mr_ct_mask_triplanar.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-011"
+    },
+    {
+      "year": 2026,
+      "title": "APRIL-MedSeg in Practice: A Hands-On Tutorial for Modular Medical Image Segmentation",
+      "authors": [
+        "Juntao Jiang"
+      ],
+      "url": "https://openreview.net/forum?id=WQ36z5yFIK",
+      "thumbnail": "img/thumbs_2026mec/id012.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-012"
+    },
+    {
+      "year": 2026,
+      "title": "Tissue Clocks: A Hands-On Minicourse on Predicting Biological Age from Pathology Whole-Slide Images",
+      "authors": [
+        "Ryan Khalloqi",
+        "Jun Ma"
+      ],
+      "url": "https://ryanwangk.github.io/tissue-clocks-minicourse/",
+      "thumbnail": "https://ryanwangk.github.io/tissue-clocks-minicourse/assets/figures/hero_age_gap_scatter.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-013"
+    },
+    {
+      "year": 2026,
+      "title": "Pixels to Patients: A Failure-First Interactive Course for Cancer Segmentation",
+      "authors": [
+        "Erfan Nourbakhsh"
+      ],
+      "url": "https://openreview.net/forum?id=jiaPG9jVI9",
+      "thumbnail": "img/thumbs_2026mec/id014.png",
+      "status": null,
+      "keywords": [],
+      "yearGroup": null,
+      "id": "2026-014"
+    },
     {
       "year": 2025,
       "title": "Building an engaging demo for your research",
