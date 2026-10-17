@@ -10,7 +10,7 @@
       ],
       "url": "https://github.com/Kirscher/when-explanations-lie",
       "thumbnail": "https://github.com/Kirscher/when-explanations-lie/raw/main/assets/teaser_figure.png",
-      "status": null,
+      "status": "winner",
       "keywords": [],
       "yearGroup": null,
       "id": "2026-001"
@@ -129,7 +129,7 @@
       ],
       "url": "https://pixels-and-predictions.pages.dev/posts/consensus-aggregation/",
       "thumbnail": "https://pixels-and-predictions.pages.dev/images/posts_images/consensus-aggregation/mv_isolated_voxels.png",
-      "status": null,
+      "status": "winner",
       "keywords": [],
       "yearGroup": null,
       "id": "2026-010"
@@ -170,7 +170,7 @@
       ],
       "url": "https://ryanwangk.github.io/tissue-clocks-minicourse/",
       "thumbnail": "https://ryanwangk.github.io/tissue-clocks-minicourse/assets/figures/hero_age_gap_scatter.png",
-      "status": null,
+      "status": "winner",
       "keywords": [],
       "yearGroup": null,
       "id": "2026-013"
